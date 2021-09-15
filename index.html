@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Pour s'adapter au smartphone-->
+    <title>Accueil</title>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/15359b2697.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header_main">
+            <!--En-tête-->
+            <!--Logo-->
+            <div id="logo">
+                        <a href="">
+                            <img src="images/logo/ohmyfood@2x.svg" alt="logo site">
+                        </a>
+            </div>
+            <form class="formulaire_boutons" method="POST" action="traitement.php">
+                <!--Zone de Recherche-->
+                <button type="button" class="position_button">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i><input type="search" name="search_city" id="search" placeholder="Paris, Belleville" autofocus required />
+                </button>
+            </form>
+    </header>
+
+    <div class="container">
+        <section class="main">
+            <!--Le corps de Header-->
+            <div class="title_main">
+                <!--l'entête du corps-->
+                <h1>Réservez le menu qui vous convient</h1>
+                <p class="sous_titre">Découvrez les restaurants d'exceptions</p>
+            </div>
+            
+            <!--Filtres-->
+            <div class="filtres_bloc">
+                    <form class="button_filters" method="POST" action="traitement.php">
+                    <!--Bouton Economique-->
+                        <label>
+                            <span class="checkbox">Explorer nos restaurants</span>
+                        </label>
+                        <input type="checkbox" hidden name="button_filtre" id="eco_filtre" />         
+                    </form>
+            </div>
+            <!--Titre Bloc-->
+            <div class="Titre_Fonctionnement">
+                    <h2>Fonctionnement</h2>
+            </div>
+            <div class="bloc_filtres">
+                    <form class="button_filters" method="POST" action="traitement.php">
+                <!--Bouton Choisir Restaurants-->
+                        <label>
+                            <span class="circle-icon"></span>
+                            <span class="checkbox"><i class="fas fa-mobile-alt"></i>Choississez votre restaurants</span>
+                        </label>
+                            <input type="checkbox" hidden name="button_filtre" id="choix_restos" />
+             <!--Bouton Composez votre menu-->
+                        <label>
+                            <span class="circle-icon"></span>
+                            <span class="checkbox"><i class="fas fa-list-ul"></i>Composez votre menu</span>
+                        </label>
+                            <input type="checkbox" hidden name="button_filtre" id="compo_menu" />
+             <!--Bouton Dégustez au restaurant-->
+                        <label>
+                            <span class="circle-icon"></span>
+                            <span class="checkbox"><i class="fas fa-store"></i>Dégustez au restaurant</span>
+                        </label>
+                            <input type="checkbox" hidden name="button_filtre" id="dégust_resto" />
+                    </form>
+            </div>
+        </div>
+        </section>
+    </div>
+    <div class="container_desktop">
+        <div class="container">
+            <section id="nom_hebergement_marseille">
+                <!--Bloc Section-->
+                <div class="bloc_section">
+                <!--Titre de la Section-->
+                    <h2>Restaurants</h2>
+                        <a href="#restaurants"></a>
+                </div>
+                    <!--Photos des etablissements-->
+                <a href="la_palette_du_gout.html" class="etablissement">
+                    <span class="cadre_etablissement">
+                            <img src="images/restaurants/La_palette_du_gout.jpg" alt="la_palette_de_gout">
+                    </span>
+                    <span class="etablissement_cadre_text">
+                        <span class="titre_h3">La palette de goût</span>
+                        <span class="texte_p">Ménilmontant</span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </a>
+                <a href="la_note_enchantee.html" class="etablissement">
+                    <span class="cadre_etablissement">
+                        <img src="images/restaurants/La_note_enchante.jpg" alt="la_note_enchante">
+                    </span>
+                    <span class="etablissement_cadre_text"> 
+                        <span class="titre_h3">La note enchantée</span>
+                        <span class="texte_p">Charonne</span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </a>
+                <a href="a_la_francaise.html" class="etablissement">
+                    <span class="cadre_etablissement">
+                        <img src="images/restaurants/a_la_francaise.jpg" alt="a_la_francaise">
+                    </span>
+                    <span class="etablissement_cadre_text">
+                        <span class="titre_h3">A la française</span>
+                        <span class="texte_p">Cité rouge</span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </a>
+                <a href="le_delice_des_sens.html" class="etablissement">
+                    <span class="cadre_etablissement">
+                        <img src="images/restaurants/le_delice_des_sens.jpg" alt="le_delice_des_sens">
+                    </span>
+                    <span class="etablissement_cadre_text">
+                        <span class="titre_h3">Le délice des sens</span>
+                        <span class="texte_p">Folie-Méricourt</span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </a>    
+            </section>
+        </div>
+    </div> 
+        <!--Footer-->
+    <footer>
+        <div class="bloc_footer">
+            <!--A propos-->
+            <div class="bloc_a_propos">
+                <div class="logo_footer">
+                    <a href="">
+                        <img class="logo_mini_footer" src="images/logo/ohmyfood@2x.svg" alt="logo_mini_footer">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Proposer un restaurant</a>
+                        </li>
+                        <li>
+                            <a href="">Devenir partenaire</a>
+                        </li>
+                        <li>
+                            <a href="">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>   
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
