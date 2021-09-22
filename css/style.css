@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.formulaire_boutons {
+  display: flex;
+  width: 100%;
+  padding: 10px 2px 5px 2px;
+}
+
+.position_button {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #d8d7d7;
+  background: #d8d7d7;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#search {
+  border: 3px solid #d8d7d7;
+  padding: 0px 0px 0px 20px;
+  font-size: 17px;
+  font-family: "Raleway";
+  font-weight: bold;
+  background: #d8d7d7;
+}
+
+input .placeholder {
+  color: black;
+}
+
+footer {
+  width: 100%;
+  display: block;
+}
+
+.bloc_footer {
+  background-color: pink;
+  padding: 1rem 1rem 1.5rem 1rem;
+  color: #fff;
+}
+
+footer a {
+  font-size: 15px;
+  padding: 5px;
+  padding-bottom: 0.25rem;
+  list-style: none;
+  color: #fff;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+  flex-direction: column;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul {
+  display: block;
+}
+
+.titre_footer {
+  display: block;
+  font-size: 1em;
+  font-weight: 800;
+  padding: 30px 0px 20px 2px;
+}
+
+.header_main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: block;
+  text-align: start;
+  margin-block-start: 10%;
+  margin-block-end: 5%;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 15px 20px 5px 20px;
+}
+
+.sous_titre {
+  padding-top: 0%;
+  font-size: 0.86em;
+  margin: 10px 0px 10px 20px;
+}
+
+.image_header {
+  width: 20%;
+}
+
+body {
+  background-color: white;
+}
+
+#logo {
+  width: auto;
+  padding-right: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*------cadre restaurants-----------*/
+.etablissement {
+  display: block;
+  border-radius: 35px;
+  box-shadow: 0px 0px 0px grey;
+  width: 100%;
+  padding: 15px;
+}
+
+.cadre_etablissement {
+  display: block;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+.cadre_etablissement img {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#section_restaurants {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: space-between;
+  margin-bottom: 15px;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0px 5px 0px 5px;
+}
+
+.titre_bloc {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px 25px 20px 10px;
+}
+
+.titre_h3 {
+  font-weight: bold;
+  color: black;
+  font-size: 1em;
+  padding: 20px 0px 0px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

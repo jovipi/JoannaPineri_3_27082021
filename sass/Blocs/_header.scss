@@ -1,0 +1,21 @@
+.header_main {
+  @include flex_column;
+}
+h1 {
+  display: block;
+  text-align: start;
+  margin-block-start: 10%;
+  margin-block-end: 5%;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 15px 20px 5px 20px;
+}
+.sous_titre {
+  padding-top: 0%;
+  font-size: 0.86em;
+  margin: 10px 0px 10px 20px;
+}
+.image_header {
+  width: 20%;
+}

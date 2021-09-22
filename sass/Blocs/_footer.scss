@@ -1,0 +1,41 @@
+@import "../Util/_variables.scss";
+
+footer {
+  width: 100%;
+  display: block;
+}
+.bloc_footer {
+  // background: $color_footer;
+  background-color: pink;
+  padding: 1rem 1rem 1.5rem 1rem;
+  color: $white;
+}
+footer a {
+  font-size: 15px;
+  padding: 5px;
+  padding-bottom: 0.25rem;
+  list-style: none;
+  color: $white;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+  flex-direction: column;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+footer ul {
+  display: block;
+}
+
+.titre_footer {
+  display: block;
+  font-size: 1em;
+  font-weight: 800;
+  padding: 30px 0px 20px 2px;
+}
