@@ -5,8 +5,7 @@ footer {
   display: block;
 }
 .bloc_footer {
-  // background: $color_footer;
-  background-color: pink;
+  background-color: $color_footer;
   padding: 1rem 1rem 1.5rem 1rem;
   color: $white;
 }

@@ -20,3 +20,13 @@
   flex-wrap: wrap;
   align-items: space-between;
 }
+@mixin flex_start_align_center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+@mixin h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}

@@ -4,17 +4,14 @@
 @import "../Composants/_boutons.scss";
 @import "../Blocs/_footer.scss";
 @import "../Blocs/_header.scss";
+@import "../Blocs/_container.scss";
+@import "../Base/_fonts.scss";
+@import url("https://fonts.googleapis.com/css2? family= Roboto & display=swap");
+@import "../Base/_fonts.scss";
+@import "../Blocs/_section_fonctionnement.scss";
 
 body {
   background-color: white;
-}
-
-#logo {
-  width: auto;
-  padding-right: 20px;
-  font-size: 60px;
-  font-weight: bold;
-  @include flex_center;
 }
 
 /*------cadre restaurants-----------*/

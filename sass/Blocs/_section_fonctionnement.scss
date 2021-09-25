@@ -1,0 +1,10 @@
+#section_fonctionnement {
+  padding: 0px 10px 40px 10px;
+}
+
+.titre_fonctionnement {
+  padding: 40px 0px 20px 20px;
+}
+.titre_fonctionnement h2 {
+  @include h2;
+}

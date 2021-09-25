@@ -1,3 +1,5 @@
+@import "../Util/_variables.scss";
+
 .header_main {
   @include flex_column;
 }
@@ -11,11 +13,91 @@ h1 {
   font-weight: bold;
   margin: 15px 20px 5px 20px;
 }
+/*Logo*/
+
+#logo {
+  display: block;
+  width: auto;
+  padding-left: 90px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+#logo img {
+  width: 60%;
+  height: 50%;
+  object-fit: contain;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 50px 5px 50px;
+}
 .sous_titre {
   padding-top: 0%;
-  font-size: 0.86em;
-  margin: 10px 0px 10px 20px;
+  font-size: 1.2em;
+  padding: 0px 5px 10px 20px;
+  text-align: center;
 }
-.image_header {
-  width: 20%;
+
+.checkbox {
+  @include flex_center;
+  padding: 20px 0px 40px 0px;
+  border: 2px solid $container;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  position: relative;
+  z-index: 0;
+  height: 15px;
+  margin: 10px 60px 30px 65px;
+  background-color: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from($color_primary),
+    to($color_secondary)
+  );
+  background: -o-linear-gradient(bottom, $color_primary, $color_secondary);
+  background: linear-gradient(to top, $color_primary, $color_secondary);
+  color: $white;
+  font-size: 1.2em;
+}
+
+.fas {
+  font-weight: 900;
+  padding: 20px;
+  font-size: 20px;
+  color: $color_icone;
+}
+
+.checkbox_filtres {
+  @include flex_start_align_center;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  position: relative;
+  z-index: 0;
+  height: 70px;
+  margin: 5px 20px 0px 20px;
+  flex-direction: row;
+  align-content: space-around;
+  padding: 10px;
+}
+
+.circle-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 23px;
+  background-color: #deebff;
+  border-radius: 50px;
+  z-index: 2;
+  position: relative;
+  left: 12px;
+  top: 53px;
 }
