@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https : //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Pour s'adapter au smartphone-->
     <title>Accueil</title>
@@ -14,31 +17,28 @@
 
 <body>
 
-    <header class="header">
-        <div class="header_main">
-            <!--En-tête-->
-            <!--Logo-->
-            <div id="logo">
+        <header class="header">
+            <div class="header_main">
+                <!--En-tête-->
+                <!--Logo-->
+                <div id="logo">
                         <a href="">
                             <img src="images/logo/ohmyfood.png" alt="logo site">
                         </a>
-            </div>
-            <form class="formulaire_boutons" method="POST" action="traitement.php">
-                <!--Zone de Recherche-->
-                <button type="button" class="position_button">
-                <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
-                <input type="search" name="search_city" id="search" placeholder="Paris, Belleville" autofocus required />
-                </button>
-            </form>
-    </header>
-
+                </div>
     <div class="container">
-        <section class="main">
+                <form class="formulaire_boutons" method="POST" action="traitement.php">
+                    <!--Zone de Recherche-->
+                    <button type="button" class="position_button">
+                    <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                    <input type="search" name="search_city" id="search" placeholder="Paris, Belleville" autofocus required />
+                    </button>
+                </form>
             <!--Le corps de Header-->
             <div class="title_main">
                 <!--l'entête du corps-->
                 <h1>Réservez le menu qui vous convient</h1>
-                <p class="sous_titre">Découvrez les restaurants d'exceptions</p>
+                <p class="sous_titre">Découvrez les restaurants d'exceptions, sélectionnés par nos soins</p>
             </div>
             
             <!--Filtres-->
@@ -48,11 +48,14 @@
                         <label>
                             <span class="checkbox">Explorer nos restaurants</span>
                         </label>
-                        <input type="checkbox" hidden name="button_filtre" id="eco_filtre" />         
+                        <input type="checkbox" hidden name="button_filtre" id="explorer" />         
                     </form>
             </div>
+        </header>
+    </div>
+        <section id="section_fonctionnement">
             <!--Titre Bloc-->
-            <div class="Titre_Fonctionnement">
+            <div class="titre_fonctionnement">
                     <h2>Fonctionnement</h2>
             </div>
             <div class="bloc_filtres">
@@ -60,29 +63,26 @@
                 <!--Bouton Choisir Restaurants-->
                         <label>
                             <span class="circle-icon"></span>
-                            <span class="checkbox"><i class="fas fa-mobile-alt"></i>Choississez votre restaurants</span>
+                            <span class="checkbox_filtres"><i class="fas fa-mobile-alt"></i> Choississez votre restaurants</span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="choix_restos" />
              <!--Bouton Composez votre menu-->
                         <label>
                             <span class="circle-icon"></span>
-                            <span class="checkbox"><i class="fas fa-list-ul"></i>Composez votre menu</span>
+                            <span class="checkbox_filtres"><i class="fas fa-list-ul"></i> Composez votre menu</span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="compo_menu" />
              <!--Bouton Dégustez au restaurant-->
                         <label>
                             <span class="circle-icon"></span>
-                            <span class="checkbox"><i class="fas fa-store"></i>Dégustez au restaurant</span>
+                            <span class="checkbox_filtres"><i class="fas fa-store"></i> Dégustez au restaurant</span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="dégust_resto" />
                     </form>
             </div>
-        </div>
         </section>
-    </div>
     <div class="container_desktop">
-        <div class="container">
-            <section id="section_restaurants">
+        <section id="section_restaurants">
                 <!--Bloc Section-->
                 <div class="titre_bloc">
                 <!--Titre de la Section-->
@@ -123,8 +123,7 @@
                         <i class="far fa-heart"></i>
                     </span>
                 </a>    
-            </section>
-        </div>
+        </section>
     </div> 
         <!--Footer-->
     <footer>
