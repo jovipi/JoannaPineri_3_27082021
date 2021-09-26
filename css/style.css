@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2? family= Roboto & display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@
 .formulaire_boutons {
   display: flex;
   width: 100%;
-  padding: 10px 2px 5px 2px;
+  padding: 3px 2px 5px 0px;
 }
 
 .position_button {
@@ -21,11 +22,14 @@
   color: black;
   font-size: 15px;
   cursor: pointer;
+  padding: 0px 0px 0px 60px;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 #search {
   border: 3px solid #d8d7d7;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 5px;
   font-size: 17px;
   font-family: "Raleway";
   font-weight: bold;
@@ -42,7 +46,7 @@ footer {
 }
 
 .bloc_footer {
-  background-color: pink;
+  background-color: #2b2a2a;
   padding: 1rem 1rem 1.5rem 1rem;
   color: #fff;
 }
@@ -95,29 +99,127 @@ h1 {
   margin: 15px 20px 5px 20px;
 }
 
+/*Logo*/
+#logo {
+  display: block;
+  width: auto;
+  padding-left: 90px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#logo img {
+  width: 60%;
+  height: 50%;
+  object-fit: contain;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 50px 5px 50px;
+}
+
 .sous_titre {
   padding-top: 0%;
-  font-size: 0.86em;
-  margin: 10px 0px 10px 20px;
+  font-size: 1.2em;
+  padding: 0px 5px 10px 20px;
+  text-align: center;
 }
 
-.image_header {
-  width: 20%;
-}
-
-body {
-  background-color: white;
-}
-
-#logo {
-  width: auto;
-  padding-right: 20px;
-  font-size: 60px;
-  font-weight: bold;
+.checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 20px 0px 40px 0px;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  position: relative;
+  z-index: 0;
+  height: 15px;
+  margin: 10px 60px 30px 65px;
+  background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.fas {
+  font-weight: 900;
+  padding: 20px;
+  font-size: 20px;
+  color: #8a8787;
+}
+
+.checkbox_filtres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  position: relative;
+  z-index: 0;
+  height: 70px;
+  margin: 5px 20px 0px 20px;
+  flex-direction: row;
+  align-content: space-around;
+  padding: 10px;
+}
+
+.circle-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 23px;
+  background-color: #deebff;
+  border-radius: 50px;
+  z-index: 2;
+  position: relative;
+  left: 12px;
+  top: 53px;
+}
+
+.container {
+  background-color: #f2f2f2;
+}
+
+.container_desktop {
+  background-color: #f2f2f2;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+#section_fonctionnement {
+  padding: 0px 10px 40px 10px;
+}
+
+.titre_fonctionnement {
+  padding: 40px 0px 20px 20px;
+}
+
+.titre_fonctionnement h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+body {
+  background-color: white;
 }
 
 /*------cadre restaurants-----------*/
