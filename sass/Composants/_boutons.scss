@@ -4,6 +4,11 @@
   display: flex;
   width: 100%;
   padding: 3px 2px 5px 0px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: stretch;
+  justify-content: center;
 }
 .position_button {
   width: 100%;
@@ -32,13 +37,13 @@ input .placeholder {
 }
 
 .button {
-  @include flex_center;
-  padding: 20px 0px 40px 0px;
-  border: 2px solid $container;
+  padding: 20px 20px 50px 20px;
+  border: 2px solid #f2f2f2;
   display: flex;
   flex-wrap: wrap;
   border-radius: 50px;
   position: relative;
+  text-align: center;
   z-index: 0;
   height: 15px;
   margin: 10px 60px 30px 65px;
@@ -46,12 +51,11 @@ input .placeholder {
     linear,
     left bottom,
     left top,
-    from($color_primary),
-    to($color_secondary)
+    from(#9356dc),
+    to(#ff79da)
   );
-
-  background: -o-linear-gradient(bottom, $color_primary, $color_secondary);
-  background: linear-gradient(to top, $color_primary, $color_secondary);
-  color: $white;
+  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  color: #fff;
   font-size: 1.2em;
 }

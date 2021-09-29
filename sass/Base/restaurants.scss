@@ -7,18 +7,18 @@
 
 #logo {
   display: block;
-  width: auto;
+  max-width: auto;
   padding-left: 90px;
   font-weight: bold;
   padding-top: 20px;
 }
 #logo img {
-  width: 60%;
-  height: 50%;
+  max-width: 60%;
+  max-height: 50%;
   object-fit: contain;
 }
 .header_main {
-  @include flex_column;
+  @include flex_header_main;
 }
 .image_header {
   display: block;

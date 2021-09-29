@@ -3,8 +3,11 @@
 }
 
 .titre_fonctionnement {
-  padding: 40px 0px 20px 20px;
+  padding: 20px 0px 5px 20px;
 }
 .titre_fonctionnement h2 {
   @include h2;
+}
+.button_filters {
+  @include flex_filtres;
 }

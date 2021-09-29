@@ -68,7 +68,7 @@ h1 {
   font-size: 1.2em;
 }
 
-.fas {
+.icone_filtres {
   font-weight: 900;
   padding: 20px;
   font-size: 20px;
@@ -86,6 +86,8 @@ h1 {
   flex-direction: row;
   align-content: space-around;
   padding: 10px;
+  background-color: $container;
+  box-shadow: 0px 0px 10px $placeholder;
 }
 
 .circle-icon {
@@ -95,15 +97,15 @@ h1 {
   align-items: center;
   height: 23px;
   width: 23px;
-  background-color: $color_primary;
+  background-color: #9356dc;
   border-radius: 50px;
   z-index: 2;
   position: relative;
-  left: 12px;
   top: 53px;
-  color: $white;
+  color: #fff;
+  left: 10px;
 }
 .nom_filtres {
-  font-size: 1em;
+  font-size: 1.04em;
   font-weight: bold;
 }

@@ -33,23 +33,22 @@
                     <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
                     <input type="search" name="search_city" id="search" placeholder="Paris, Belleville" autofocus required />
                     </button>
-                </form>
+               
             <!--Le corps de Header-->
-            <div class="title_main">
+                    <div class="title_main">
                 <!--l'entête du corps-->
-                <h1>Réservez le menu qui vous convient</h1>
-                <p class="sous_titre">Découvrez les restaurants d'exceptions, sélectionnés par nos soins</p>
-            </div>
+                        <h1>Réservez le menu qui vous convient</h1>
+                            <p class="sous_titre">Découvrez les restaurants d'exceptions, sélectionnés par nos soins</p>
+                    </div>
             
-            <!--Filtres-->
-            <div class="filtres_bloc">
-                    <form class="button_filters" method="POST" action="traitement.php">
+                    <!--Filtres-->
+                    <div class="filtres_bloc">
                     <!--Bouton Economique-->
                         <label>
                             <span class="button">Explorer nos restaurants</span>
                         </label>
                         <input type="button" hidden name="button_filtre" id="explorer" />         
-                    </form>
+                </form>
             </div>
             
         </header>
@@ -64,19 +63,19 @@
                 <!--Bouton Choisir Restaurants-->
                         <label>
                             <span class="circle-icon">1</span>
-                            <span class="checkbox_filtres"><i class="fas fa-mobile-alt"></i><span class="nom_filtres">Choississez votre restaurants</span></span>
+                            <span class="checkbox_filtres"><i class="icone_filtres fas fa-mobile-alt"></i><span class="nom_filtres">Choississez votre restaurants</span></span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="choix_restos" />
              <!--Bouton Composez votre menu-->
                         <label>
                             <span class="circle-icon">2</span>
-                            <span class="checkbox_filtres"><i class="fas fa-list-ul"></i><span class="nom_filtres">Composez votre menu</span></span>
+                            <span class="checkbox_filtres"><i class="icone_filtres fas fa-list-ul"></i><span class="nom_filtres">Composez votre menu</span></span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="compo_menu" />
              <!--Bouton Dégustez au restaurant-->
                         <label>
                             <span class="circle-icon">3</span>
-                            <span class="checkbox_filtres"><i class="fas fa-store"></i><p class="nom_filtres">Dégustez au restaurant</p></span>
+                            <span class="checkbox_filtres"><i class="icone_filtres fas fa-store"></i><p class="nom_filtres">Dégustez au restaurant</p></span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="dégust_resto" />
                     </form>
@@ -90,12 +89,12 @@
                     <h2>Restaurants</h2>
                 </div>
                     <!--Photos des etablissements-->
-                <a href="la_palette_du_gout.html" class="etablissement">
-                    <span class="cadre">
-                        <span class="nouveau">Nouveau</span>
-                        <img class="img1"src="images/restaurants/La_palette_du_gout.jpg" alt="la_palette_de_gout">
-                    </span>
+                <a href="la_palette_du_gout.html" class="etablissement">     
                     <span class="cadre_etablissement">
+                        <span class="cadre">
+                        <img src="images/restaurants/La_palette_du_gout.jpg" alt="la_palette_de_gout">
+                        <span class="nouveau">Nouveau</span>
+                        </span>
                         <span class="titre_h3">La palette de goût<i class="far fa-heart"></i></span>
                         <span class="texte_p">Ménilmontant</span>           
                     </span>
@@ -111,19 +110,17 @@
                 <a href="a_la_francaise.html" class="etablissement">
                     <span class="cadre_etablissement">
                         <img src="images/restaurants/a_la_francaise.jpg" alt="a_la_francaise">
-                        <span class="bloc_sans_nouveau">
-                            <span class="titre_h3">A la française <i class="far fa-heart"></i></span>
+                            <span></span>
+                            <span class="titre_h3">A la française<i class="far fa-heart"></i></span>
                             <span class="texte_p">Cité rouge</span>
-                        </span>     
                     </span>
                 </a>
                 <a href="le_delice_des_sens.html" class="etablissement">
                     <span class="cadre_etablissement">
                         <img src="images/restaurants/le_delice_des_sens.jpg" alt="le_delice_des_sens">
-                        <span class="bloc_sans_nouveau">
-                            <span class="titre_h3">Le délice des sens <i class="far fa-heart"></i></span>
+                            <span></span>
+                            <span class="titre_h3">Le délice des sens<i class="far fa-heart"></i></span>
                             <span class="texte_p">Folie-Méricourt</span>
-                        </span>
                     </span>
                 </a>    
         </section>
@@ -139,10 +136,10 @@
                 <nav>
                     <ul>
                         <li>       
-                            <a href=""><span class="icone_footer"><i class="fas fa-utensils"></i></span>Proposer un restaurant</a>
+                            <a href=""><i class="icone_blanc fas fa-utensils icone_blanc"></i> Proposer un restaurant</a>
                         </li>
                         <li>             
-                            <a href=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+                            <a href=""><i class="icone_blanc fas fa-hands-helping "></i>Devenir partenaire</a>
                         </li>
                         <li>
                             <a href="">Mentions légales</a>
