@@ -6,3 +6,9 @@
 .container_desktop {
   background-color: $container;
 }
+.container_menu {
+  background-color: $container;
+  position: relative;
+  border-radius: 20px;
+  z-index: 1;
+}

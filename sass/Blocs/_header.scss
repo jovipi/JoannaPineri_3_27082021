@@ -43,7 +43,7 @@ h1 {
   text-align: center;
 }
 
-.checkbox {
+.button {
   @include flex_center;
   padding: 20px 0px 40px 0px;
   border: 2px solid $container;
@@ -61,6 +61,7 @@ h1 {
     from($color_primary),
     to($color_secondary)
   );
+
   background: -o-linear-gradient(bottom, $color_primary, $color_secondary);
   background: linear-gradient(to top, $color_primary, $color_secondary);
   color: $white;
@@ -94,10 +95,15 @@ h1 {
   align-items: center;
   height: 23px;
   width: 23px;
-  background-color: #deebff;
+  background-color: $color_primary;
   border-radius: 50px;
   z-index: 2;
   position: relative;
   left: 12px;
   top: 53px;
+  color: $white;
+}
+.nom_filtres {
+  font-size: 1em;
+  font-weight: bold;
 }

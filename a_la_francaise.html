@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/restaurants.css" /> 
+    <link rel="stylesheet" href="css/style.css"/> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Pour s'adapter au smartphone-->
     <title>A la française</title>
@@ -17,11 +17,10 @@
             <div class="header_main">
                 <!--En-tête-->
                 <div class="en_tete_page">
-                    <i class="fas fa-arrow-left"></i>
                     <!--Logo-->
                     <div id="logo">
-                            <a href="">
-                                <img src="images/logo/ohmyfood@2x.svg" alt="logo site">
+                            <a href="index.html">
+                                <i class="fas fa-arrow-left"></i><img src="images/logo/ohmyfood.png" alt="logo site">
                             </a>
                     </div>
                     <div class="image_header">
@@ -32,43 +31,45 @@
                 </div>
             </div>
         </header>
+    <div class="container_menu">
         <section id="bloc_entree">
             <div class="bloc_titre">
                 <!--Titre-->
-                <h1>A la française</h1>
-                <i class="far fa-heart"></i>
+                <h1>A la française<i class="far fa-heart"></i></h1>
             </div>
                 <!--Bloc-Entrees-->
                 <div class="bloc_menu_entree">
                 <!--Titre -->
-                    <h2>Entrées</h2>
+                    <h2>ENTRÉES</h2>
                             <a href="" class="entrees">
                                 <span class="cadre_proposition">
-                                        <span class="titre_h3">Tartare de poulpe acidulé</span>
-                                        <span class="texte_p">Au zest d'orange</span>
-                                        <span class="prix">25euros</span>
+                                        <span class="titre_menu_h3">Tartare de poulpe acidulé</span>
+                                        <span class="texte_menu_p">Au zest d'orange</span>
+                                        <span class="prix">25€</span>
                                     <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox"name="button_filtre" id="check_petales" />
+                                        <input type="checkbox" hidden name="button_filtre" id="check_menu" />
                                     </form>
                                 </span>
                             </a>
                             <a href="" class="entrees">
                                 <span class="cadre_proposition">
-                                        <span class="titre_h3">Velouté de légumes d'antan</span>
-                                        <span class="texte_p">Carotte,panais,topinambour</span>
-                                        <span class="prix">35euros</span>
+                                        <span class="titre_menu_h3">Velouté de légumes d'antan</span>
+                                        <span class="texte_menu_p">Carotte,panais,topinambour</span>
+                                        <span class="prix">35€</span>
                                     <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox" name="button_filtre" id="check_petales" />
+                                        <input type="checkbox"hidden name="button_filtre" id="check_menu" />
                                     </form>
                                 </span>
                             </a>
                             <a href="" class="entrees">
                                 <span class="cadre_proposition">
-                                        <span class="titre_h3">Soupe à l'oignon</span>
-                                        <span class="texte_p">Revisitée</span>
-                                        <span class="prix">20euros</span>
-                                    <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox" name="button_filtre" id="check_petales" />
+                                        <span class="titre_menu_h3">Soupe à l'oignon</span>
+                                        <span class="texte_menu_p">Revisitée</span>
+                                        <span class="prix">20€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">    
+                                        <i class="fa-check fas menuItem__icon" aria-hidden="true"></i> 
+                                        <input type="checkbox" checked hidden name="button_filtre" id="check_menu_valide"/>           
+                                        </div>
                                     </form>
                                 </span>
                             </a>
@@ -77,34 +78,34 @@
         <section id="bloc_plats">
                 <div class="bloc_menu_plats">
                 <!--Titre -->
-                    <h2>Plats</h2>
+                    <h2>PLATS</h2>
                             <a href="" class="plats">
                                 <span class="cadre_proposition">
-                                        <span class="titre_h3">Coquilles Saint-Jacques</span>
-                                        <span class="texte_p">Accompagnées d'une purée de panais</span>
-                                        <span class="prix">40euros</span>
+                                        <span class="titre_menu_h3">Coquilles Saint-Jacques</span>
+                                        <span class="texte_menu_p">Accompagnées d'une purée de panais</span>
+                                        <span class="prix">40€</span>
                                     <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox" name="button_filtre" id="check_coquilles" />
+                                        <input type="checkbox"hidden name="button_filtre" id="check_coquilles" />
                                     </form>
                                 </span>
                             </a>
                             <a href="" class="plats">
                                     <span class="cadre_proposition">
-                                        <span class="titre_h3">Magret de canard</span>
-                                        <span class="texte_p">Et parmentier de pommes de terres</span>
-                                        <span class="prix">35euros</span>
+                                        <span class="titre_menu_h3">Magret de canard</span>
+                                        <span class="texte_menu_p">Et parmentier de pommes de terres</span>
+                                        <span class="prix">35€</span>
                                     <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox"  name="button_filtre" id="check_magret" />
+                                        <input type="checkbox" hidden name="button_filtre" id="check_magret" />
                                     </form>
                                 </span>
                             </a>
                             <a href="" class="plats">
                                 <span class="cadre_proposition">
-                                        <span class="titre_h3">Pigeonneau d'Ille-et-Vilaine</span>
-                                        <span class="texte_p">Sur son lit de gnocchis aux légumes</span>
-                                        <span class="prix">44euros</span>
+                                        <span class="titre_menu_h3">Pigeonneau d'Ille-et-Vilaine</span>
+                                        <span class="texte_menu_p">Sur son lit de gnocchis aux légumes</span>
+                                        <span class="prix">44€</span>
                                     <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox" name="button_filtre" id="check_pigeonneau" />
+                                        <input type="checkbox"hidden name="button_filtre" id="check_pigeonneau" />
                                     </form>
                                 </span>
                             </a>
@@ -113,34 +114,34 @@
         <section id="bloc_dessert">
                 <div class="bloc_menu_desserts">
                 <!--Titre -->
-                    <h2>Desserts</h2>
+                    <h2>DESSERTS</h2>
                             <a href="" class="desserts">
                                 <span class="cadre_proposition">
-                                        <span class="titre_h3">Pétales de violettes glacés</span>
-                                        <span class="texte_p">Et purée de noisettes</span>
-                                        <span class="prix">18euros</span>
+                                        <span class="titre_menu_h3">Pétales de violettes glacés</span>
+                                        <span class="texte_menu_p">Et purée de noisettes</span>
+                                        <span class="prix">18€</span>
                                     <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox" name="button_filtre" id="check_petales" />
+                                        <input type="checkbox" hidden name="button_filtre" id="check_petales" />
                                     </form>
                                 </span>
                             </a>
                             <a href="" class="desserts">
                                 <span class="cadre_proposition">
-                                        <span class="titre_h3">Fondant au chocolat</span>
-                                        <span class="texte_p">Revisité</span>
-                                        <span class="prix">22euros</span>
+                                        <span class="titre_menu_h3">Fondant au chocolat</span>
+                                        <span class="texte_menu_p">Revisité</span>
+                                        <span class="prix">22€</span>
                                     <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox" name="button_filtre" id="check_fondant" />
+                                        <input type="checkbox" hidden name="button_filtre" id="check_fondant" />
                                     </form>
                                 </span>
                             </a>
                             <a href="" class="desserts">
                                 <span class="cadre_proposition">
-                                        <span class="titre_h3">Millefeuille croustillant</span>
-                                        <span class="texte_p">Myrtilles et pâte d'amande</span>
-                                        <span class="prix">23euros</span>
+                                        <span class="titre_menu_h3">Millefeuille croustillant</span>
+                                        <span class="texte_menu_p">Myrtilles et pâte d'amande</span>
+                                        <span class="prix">23€</span>
                                     <form class="button_checked" method="POST" action="traitement.php">
-                                        <input type="checkbox"  name="button_filtre" id="check_millefeuille" />
+                                        <input type="checkbox" hidden name="button_filtre" id="check_millefeuille" />
                                     </form>
                                 </span>
                             </a>
@@ -152,6 +153,7 @@
                         </button>
             </form>
         </section>
+    </div>
         <footer>
         <!--Footer-->
             <div class="bloc_footer">

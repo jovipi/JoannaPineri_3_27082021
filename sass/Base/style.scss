@@ -1,4 +1,4 @@
-@import "_reset.scss";
+@import "../Base/_reset.scss";
 @import "../Util/_variables.scss";
 @import "../Util/_mixins.scss";
 @import "../Composants/_boutons.scss";
@@ -6,52 +6,6 @@
 @import "../Blocs/_header.scss";
 @import "../Blocs/_container.scss";
 @import "../Base/_fonts.scss";
-@import url("https://fonts.googleapis.com/css2? family= Roboto & display=swap");
-@import "../Base/_fonts.scss";
 @import "../Blocs/_section_fonctionnement.scss";
-
-body {
-  background-color: white;
-}
-
-/*------cadre restaurants-----------*/
-.etablissement {
-  display: block;
-  border-radius: 35px;
-  box-shadow: 0px 0px 0px grey;
-  width: 100%;
-  padding: 15px;
-}
-.cadre_etablissement {
-  display: block;
-  width: 100%;
-  height: 250px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px grey;
-}
-.cadre_etablissement img {
-  display: block;
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 20px 20px 0px 0px;
-}
-#section_restaurants {
-  @include flex_space_between;
-  margin-bottom: 15px;
-  font-size: 20px;
-  width: 100%;
-  height: 100%;
-  margin: 0px 5px 0px 5px;
-}
-.titre_bloc {
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 20px 25px 20px 10px;
-}
-.titre_h3 {
-  font-weight: bold;
-  color: black;
-  font-size: 1em;
-  padding: 20px 0px 0px 10px;
-}
+@import "../Blocs/section_restaurants.scss";
+@import "../Base/restaurants.scss";

@@ -46,11 +46,12 @@
                     <form class="button_filters" method="POST" action="traitement.php">
                     <!--Bouton Economique-->
                         <label>
-                            <span class="checkbox">Explorer nos restaurants</span>
+                            <span class="button">Explorer nos restaurants</span>
                         </label>
-                        <input type="checkbox" hidden name="button_filtre" id="explorer" />         
+                        <input type="button" hidden name="button_filtre" id="explorer" />         
                     </form>
             </div>
+            
         </header>
     </div>
         <section id="section_fonctionnement">
@@ -62,20 +63,20 @@
                     <form class="button_filters" method="POST" action="traitement.php">
                 <!--Bouton Choisir Restaurants-->
                         <label>
-                            <span class="circle-icon"></span>
-                            <span class="checkbox_filtres"><i class="fas fa-mobile-alt"></i> Choississez votre restaurants</span>
+                            <span class="circle-icon">1</span>
+                            <span class="checkbox_filtres"><i class="fas fa-mobile-alt"></i><span class="nom_filtres">Choississez votre restaurants</span></span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="choix_restos" />
              <!--Bouton Composez votre menu-->
                         <label>
-                            <span class="circle-icon"></span>
-                            <span class="checkbox_filtres"><i class="fas fa-list-ul"></i> Composez votre menu</span>
+                            <span class="circle-icon">2</span>
+                            <span class="checkbox_filtres"><i class="fas fa-list-ul"></i><span class="nom_filtres">Composez votre menu</span></span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="compo_menu" />
              <!--Bouton Dégustez au restaurant-->
                         <label>
-                            <span class="circle-icon"></span>
-                            <span class="checkbox_filtres"><i class="fas fa-store"></i> Dégustez au restaurant</span>
+                            <span class="circle-icon">3</span>
+                            <span class="checkbox_filtres"><i class="fas fa-store"></i><p class="nom_filtres">Dégustez au restaurant</p></span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="dégust_resto" />
                     </form>
@@ -87,40 +88,42 @@
                 <div class="titre_bloc">
                 <!--Titre de la Section-->
                     <h2>Restaurants</h2>
-                        <a href="#restaurants"></a>
                 </div>
                     <!--Photos des etablissements-->
                 <a href="la_palette_du_gout.html" class="etablissement">
-                    <span class="cadre_etablissement">
-                            <img class="img1"src="images/restaurants/La_palette_du_gout.jpg" alt="la_palette_de_gout">
-                            <span class="titre_h3">La palette de goût</span>
-                            <span class="texte_p">Ménilmontant</span>
-                            <i class="far fa-heart"></i>
+                    <span class="cadre">
+                        <span class="nouveau">Nouveau</span>
+                        <img class="img1"src="images/restaurants/La_palette_du_gout.jpg" alt="la_palette_de_gout">
                     </span>
-                        
+                    <span class="cadre_etablissement">
+                        <span class="titre_h3">La palette de goût<i class="far fa-heart"></i></span>
+                        <span class="texte_p">Ménilmontant</span>           
+                    </span>
                 </a>
                 <a href="la_note_enchantee.html" class="etablissement">
                     <span class="cadre_etablissement">
                         <img src="images/restaurants/La_note_enchante.jpg" alt="la_note_enchante">
-                        <span class="titre_h3">La note enchantée</span>
+                        <span class="nouveau">Nouveau</span>
+                        <span class="titre_h3">La note enchantée<i class="far fa-heart"></i></span>
                         <span class="texte_p">Charonne</span>
-                        <i class="far fa-heart"></i>
                     </span>
                 </a>
                 <a href="a_la_francaise.html" class="etablissement">
                     <span class="cadre_etablissement">
                         <img src="images/restaurants/a_la_francaise.jpg" alt="a_la_francaise">
-                        <span class="titre_h3">A la française</span>
-                        <span class="texte_p">Cité rouge</span>
-                        <i class="far fa-heart"></i>
+                        <span class="bloc_sans_nouveau">
+                            <span class="titre_h3">A la française <i class="far fa-heart"></i></span>
+                            <span class="texte_p">Cité rouge</span>
+                        </span>     
                     </span>
                 </a>
                 <a href="le_delice_des_sens.html" class="etablissement">
                     <span class="cadre_etablissement">
                         <img src="images/restaurants/le_delice_des_sens.jpg" alt="le_delice_des_sens">
-                        <span class="titre_h3">Le délice des sens</span>
-                        <span class="texte_p">Folie-Méricourt</span>
-                        <i class="far fa-heart"></i>
+                        <span class="bloc_sans_nouveau">
+                            <span class="titre_h3">Le délice des sens <i class="far fa-heart"></i></span>
+                            <span class="texte_p">Folie-Méricourt</span>
+                        </span>
                     </span>
                 </a>    
         </section>
@@ -136,7 +139,7 @@
                 <nav>
                     <ul>
                         <li>       
-                            <a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+                            <a href=""><span class="icone_footer"><i class="fas fa-utensils"></i></span>Proposer un restaurant</a>
                         </li>
                         <li>             
                             <a href=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>

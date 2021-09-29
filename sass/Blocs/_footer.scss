@@ -16,6 +16,9 @@ footer a {
   list-style: none;
   color: $white;
 }
+.icone_footer + .fas fa-utensils {
+  color: $white;
+}
 
 footer nav {
   display: flex;
