@@ -48,6 +48,18 @@
   padding: 0px 0px 0px 15px;
   color: $black;
 }
+.titre_h3_sans_nouveau {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: bold;
+  color: black;
+  font-size: 1em;
+  padding: 20px 0px 0px 15px;
+}
 .nouveau {
   @include nouveau;
 }

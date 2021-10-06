@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family= Roboto & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -179,7 +180,6 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px 0px 40px 0px;
   border: 2px solid #f2f2f2;
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +187,6 @@ h1 {
   position: relative;
   z-index: 0;
   height: 15px;
-  margin: 10px 60px 30px 65px;
   background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -211,8 +210,8 @@ h1 {
   border-radius: 20px;
   position: relative;
   z-index: 0;
-  height: 70px;
-  margin: 5px 20px 0px 20px;
+  height: 80px;
+  margin: 0px 0px 0px 15px;
   flex-direction: row;
   align-content: space-around;
   padding: 10px;
@@ -233,11 +232,11 @@ h1 {
   position: relative;
   top: 53px;
   color: #fff;
-  left: 10px;
+  left: 1px;
 }
 
 .nom_filtres {
-  font-size: 1.04em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
@@ -252,13 +251,17 @@ h1 {
 
 .container_menu {
   background-color: #f2f2f2;
-  position: relative;
-  border-radius: 20px;
+  margin-top: -50px;
   z-index: 1;
+  position: relative;
 }
 
 * {
   font-family: "Roboto", sans-serif;
+}
+
+.bloc_titre h1 {
+  font-family: "Shrikhand", sans-serif;
 }
 
 #section_fonctionnement {
@@ -351,11 +354,24 @@ h1 {
   color: #000;
 }
 
+.titre_h3_sans_nouveau {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: bold;
+  color: black;
+  font-size: 1em;
+  padding: 20px 0px 0px 15px;
+}
+
 .nouveau {
   position: relative;
   background-color: #99e2d0;
   z-index: 1;
-  left: 230px;
+  left: 170px;
   border-radius: 4px;
   top: -150px;
   color: green;
@@ -437,6 +453,118 @@ input .placeholder {
   font-size: 1.2em;
 }
 
+.header_main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: block;
+  text-align: start;
+  margin-block-start: 10%;
+  margin-block-end: 5%;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 15px 20px 5px 20px;
+}
+
+/*Logo*/
+#logo {
+  display: block;
+  width: auto;
+  padding-left: 90px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#logo img {
+  width: 60%;
+  height: 50%;
+  object-fit: contain;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 50px 5px 50px;
+}
+
+.sous_titre {
+  padding-top: 0%;
+  font-size: 1.2em;
+  padding: 0px 5px 10px 20px;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  position: relative;
+  z-index: 0;
+  height: 15px;
+  background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.icone_filtres {
+  font-weight: 900;
+  padding: 20px;
+  font-size: 20px;
+  color: #8a8787;
+}
+
+.checkbox_filtres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  position: relative;
+  z-index: 0;
+  height: 80px;
+  margin: 0px 0px 0px 15px;
+  flex-direction: row;
+  align-content: space-around;
+  padding: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px #d8d7d7;
+}
+
+.circle-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 23px;
+  background-color: #9356dc;
+  border-radius: 50px;
+  z-index: 2;
+  position: relative;
+  top: 53px;
+  color: #fff;
+  left: 1px;
+}
+
+.nom_filtres {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
 /*Logo*/
 #logo {
   display: block;
@@ -468,7 +596,13 @@ input .placeholder {
 }
 
 .image_header img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 32rem;
+  object-fit: cover;
+}
+
+.fleche_gauche {
+  padding: 10px;
 }
 
 .bloc_titre {
@@ -496,8 +630,8 @@ input .placeholder {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: stretch;
-  align-items: stretch;
+  align-content: space-between;
+  align-items: flex-start;
 }
 
 #bloc_entree {
@@ -514,6 +648,11 @@ input .placeholder {
   align-content: stretch;
 }
 
+.bloc_titre h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
+}
+
 h2 {
   padding: 10px;
   font-weight: lighter;
@@ -526,7 +665,7 @@ h2 {
 
 .titre_menu_h3 {
   color: #000;
-  font-size: 1.2em;
+  font-size: 1.05em;
   font-weight: bold;
 }
 
@@ -565,8 +704,8 @@ h2 {
 
 .button_checked {
   background-color: #99e2d0;
-  font-size: 60px;
-  padding: 0px 10px 0px 10px;
+  font-size: 61px;
+  padding: 0px 10px 0px 20px;
   border-radius: 0px 20px 20px 0px;
   position: relative;
   left: 10px;
@@ -574,10 +713,178 @@ h2 {
 
 .menuItem__icon {
   padding: 5px;
-  color: #fff;
+  color: #99e2d0;
   border: 2px solid #fff;
   border-radius: 100px;
   position: relative;
+  background-color: #fff;
+  font-size: 18px;
+  top: -12px;
+  right: 5px;
+}
+
+#check_menu_valide {
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+}
+
+/*Logo*/
+#logo {
+  display: block;
+  max-width: auto;
+  padding-left: 90px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#logo img {
+  max-width: 60%;
+  max-height: 50%;
+  object-fit: contain;
+}
+
+.header_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image_header {
+  display: block;
+  width: auto;
+  font-weight: bold;
+}
+
+.image_header img {
+  max-width: 100%;
+  max-height: 32rem;
+  object-fit: cover;
+}
+
+.fleche_gauche {
+  padding: 10px;
+}
+
+.bloc_titre {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0px 30px 0px;
+}
+
+/* -----Cadre photo restaurants--------*/
+.cadre_proposition {
+  display: flex;
+  width: 95%;
+  height: 70px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+  margin: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: flex-start;
+}
+
+#bloc_entree {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.bloc_titre h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  padding: 10px;
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+.bloc_menu_entree h2 :hover {
+  border-bottom: 3px solid #ff79da;
+}
+
+.titre_menu_h3 {
+  color: #000;
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
+.texte_menu_p {
+  font-size: 1em;
+  color: #000;
+}
+
+.search_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 40px 40px 40px;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  position: relative;
+  z-index: 0;
+  height: 15px;
+  margin: 10px 60px 30px 90px;
+  background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.prix {
+  display: flex;
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #000;
+}
+
+.button_checked {
+  background-color: #99e2d0;
+  font-size: 61px;
+  padding: 0px 10px 0px 20px;
+  border-radius: 0px 20px 20px 0px;
+  position: relative;
+  left: 10px;
+}
+
+.menuItem__icon {
+  padding: 5px;
+  color: #99e2d0;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  position: relative;
+  background-color: #fff;
+  font-size: 18px;
+  top: -12px;
+  right: 5px;
 }
 
 #check_menu_valide {

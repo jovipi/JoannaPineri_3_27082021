@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https : //fonts.googleapis.com/css2? family= Shrikhand & display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Pour s'adapter au smartphone-->
     <title>Le délice des sens</title>
@@ -12,177 +15,178 @@
 
 </head>
 
-<body>
-    <header class="header">
-        <div class="header_main">
-            <!--En-tête-->
-            <div class="en_tete_page">
-                <i class="fas fa-arrow-left"></i>
-                <!--Logo-->
-                <div id="logo">
-                        <a href="">
-                            <img src="images/logo/ohmyfood@2x.svg" alt="logo site">
-                        </a>
-                </div>
-                <div class="image_header">
-                        <a href="">
-                            <img src="images/restaurants/le_delice_des_sens.jpg" alt="le_delice_des_sens">
-                        </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section id="bloc_entree">
-        <div class="bloc_titre">
-            <!--Titre-->
-            <h1>Le délice des sens</h1>
-            <i class="far fa-heart"></i>
-        </div>
-            <!--Bloc-Entrees-->
-            <div class="bloc_menu_entree">
-            <!--Titre -->
-                <h2>Entrées</h2>
-                        <a href="" class="entrees">
-                            <span class="cadre_proposition">
-                                    <span class="titre_h3">Tartare de thon</span>
-                                    <span class="texte_p">Assaisonné au yuzu</span>
-                                    <span class="prix">25euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox"name="button_filtre" id="check_petales" />
-                                </form>
-                            </span>
-                        </a>
-                        <a href="" class="entrees">
-                            <span class="cadre_proposition">
-                                    <span class="titre_h3">Bouchée de homard croustillant</span>
-                                    <span class="texte_p">Et sa farandole de petits légumes</span>
-                                    <span class="prix">35euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox" name="button_filtre" id="check_petales" />
-                                </form>
-                            </span>
-                        </a>
-                        <a href="" class="entrees">
-                            <span class="cadre_proposition">
-                                    <span class="titre_h3">Velouté de cèpes</span>
-                                    <span class="texte_p">Au truffes</span>
-                                    <span class="prix">20euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox" name="button_filtre" id="check_petales" />
-                                </form>
-                            </span>
-                        </a>
-            </div>
-    </section>
-    <section id="bloc_plats">
-            <div class="bloc_menu_plats">
-            <!--Titre -->
-                <h2>Plats</h2>
-                        <a href="" class="plats">
-                            <span class="cadre_proposition">
-                                    <span class="titre_h3">Poulet rôti aux herbes de provence</span>
-                                    <span class="texte_p">Et sa crème de truffe</span>
-                                    <span class="prix">40euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox" name="button_filtre" id="check_coquilles" />
-                                </form>
-                            </span>
-                        </a>
-                        <a href="" class="plats">
-                                <span class="cadre_proposition">
-                                    <span class="titre_h3">Langouste rôti</span>
-                                    <span class="texte_p">Et ses légumes de saison</span>
-                                    <span class="prix">35euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox"  name="button_filtre" id="check_magret" />
-                                </form>
-                            </span>
-                        </a>
-                        <a href="" class="plats">
-                            <span class="cadre_proposition">
-                                    <span class="titre_h3">Côte de boeuf angus</span>
-                                    <span class="texte_p">Et sa purée de panais</span>
-                                    <span class="prix">44euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox" name="button_filtre" id="check_pigeonneau" />
-                                </form>
-                            </span>
-                        </a>
-            </div>
-    </section>
-    <section id="bloc_dessert">
-            <div class="bloc_menu_desserts">
-            <!--Titre -->
-                <h2>Desserts</h2>
-                        <a href="" class="desserts">
-                            <span class="cadre_proposition">
-                                    <span class="titre_h3">Farandole de desserts</span>
-                                    <span class="texte_p">Du chef</span>
-                                    <span class="prix">18euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox" name="button_filtre" id="check_petales" />
-                                </form>
-                            </span>
-                        </a>
-                        <a href="" class="desserts">
-                            <span class="cadre_proposition">
-                                    <span class="titre_h3">Crème brûlée </span>
-                                    <span class="texte_p">Revisité</span>
-                                    <span class="prix">22euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox" name="button_filtre" id="check_fondant" />
-                                </form>
-                            </span>
-                        </a>
-                        <a href="" class="desserts">
-                            <span class="cadre_proposition">
-                                    <span class="titre_h3">Tiramisu</span>
-                                    <span class="texte_p">A la noisette</span>
-                                    <span class="prix">23euros</span>
-                                <form class="button_checked" method="POST" action="traitement.php">
-                                    <input type="checkbox"  name="button_filtre" id="check_millefeuille" />
-                                </form>
-                            </span>
-                        </a>
-            </div>
-            <form class="formulaire_boutons" method="POST" action="traitement.php">  
-                    <!--Bouton commander-->
-                    <button type="button" class="search_button">
-                            <span>Commander</span>
-                    </button>
-        </form>
-    </section>
-    <footer>
-    <!--Footer-->
-        <div class="bloc_footer">
-            <!--Nav Footer-->
-            <div class="bloc_nav_footer">
-                    <div class="logo_footer">
-                            <a href="">
-                                <img class="logo_mini_footer" src="images/logo/ohmyfood@2x.svg" alt="logo_mini_footer">
+    <body>
+        <header class="header">
+            <div class="header_main">
+                <!--En-tête-->
+                <div class="en_tete_page">
+                    <!--Logo-->
+                    <div id="logo">
+                            <a href="index.html">
+                                <i class="fas fa-arrow-left"></i><img src="images/logo/ohmyfood.png" alt="logo site">
                             </a>
                     </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <i class="fas fa-utensils"></i>
-                                <a href="">Proposer un restaurant</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-hands-helping"></i>
-                                <a href="">Devenir partenaire</a>
-                            </li>
-                            <li>
-                                <a href="">Mentions légales</a>
-                            </li>
-                            <li>
-                                <a href="">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>   
+                    <div class="image_header">
+                            <a href="">
+                                <img src="images/restaurants/a_la_francaise.jpg" alt="a_la_francaise">
+                            </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
-
+        </header>
+    <div class="container_menu">
+        <section id="bloc_entree">
+            <div class="bloc_titre">
+                <!--Titre-->
+                <h1>Le délice des sens<i class="far fa-heart"></i></h1>
+            </div>
+                <!--Bloc-Entrees-->
+                <div class="bloc_menu_entree">
+                <!--Titre -->
+                    <h2>ENTRÉES</h2>
+                            <a href="" class="entrees">
+                                <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Tartare de thon</span>
+                                        <span class="texte_menu_p">Assaisonné au yuzu</span>
+                                        <span class="prix">25€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">
+                                        <input type="checkbox" hidden name="button_filtre" id="check_menu" />
+                                    </form>
+                                </span>
+                            </a>
+                            <a href="" class="entrees">
+                                <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Bouchée de homard croustillant</span>
+                                        <span class="texte_menu_p">Et sa farandole de petit légumes</span>
+                                        <span class="prix">35€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">
+                                        <input type="checkbox"hidden name="button_filtre" id="check_menu" />
+                                    </form>
+                                </span>
+                            </a>
+                            <a href="" class="entrees">
+                                <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Velouté de cèpes</span>
+                                        <span class="texte_menu_p">Aux truffes</span>
+                                        <span class="prix">20€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">    
+                                        <i class="fa-check fas menuItem__icon" aria-hidden="true"></i> 
+                                        <input type="checkbox" checked hidden name="button_filtre" id="check_menu_valide"/>           
+                                        </div>
+                                    </form>
+                                </span>
+                            </a>
+                </div>
+        </section>
+        <section id="bloc_plats">
+                <div class="bloc_menu_plats">
+                <!--Titre -->
+                    <h2>PLATS</h2>
+                            <a href="" class="plats">
+                                <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Poulet rôtie aux herbes de provence</span>
+                                        <span class="texte_menu_p">Et sa crème de truffe</span>
+                                        <span class="prix">40€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">
+                                        <input type="checkbox"hidden name="button_filtre" id="check_coquilles" />
+                                    </form>
+                                </span>
+                            </a>
+                            <a href="" class="plats">
+                                    <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Langouste rôtie</span>
+                                        <span class="texte_menu_p">Et ses légumes de saison</span>
+                                        <span class="prix">35€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">
+                                        <input type="checkbox" hidden name="button_filtre" id="check_magret" />
+                                    </form>
+                                </span>
+                            </a>
+                            <a href="" class="plats">
+                                <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Côte de boeuf angus</span>
+                                        <span class="texte_menu_p">Et sa purée de panais</span>
+                                        <span class="prix">44€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">
+                                        <input type="checkbox"hidden name="button_filtre" id="check_pigeonneau" />
+                                    </form>
+                                </span>
+                            </a>
+                </div>
+        </section>
+        <section id="bloc_dessert">
+                <div class="bloc_menu_desserts">
+                <!--Titre -->
+                    <h2>DESSERTS</h2>
+                            <a href="" class="desserts">
+                                <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Farandole de desserts</span>
+                                        <span class="texte_menu_p">Du chef</span>
+                                        <span class="prix">18€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">
+                                        <input type="checkbox" hidden name="button_filtre" id="check_petales" />
+                                    </form>
+                                </span>
+                            </a>
+                            <a href="" class="desserts">
+                                <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Crème brûlée</span>
+                                        <span class="texte_menu_p">Revisitée</span>
+                                        <span class="prix">22€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">
+                                        <input type="checkbox" hidden name="button_filtre" id="check_fondant" />
+                                    </form>
+                                </span>
+                            </a>
+                            <a href="" class="desserts">
+                                <span class="cadre_proposition">
+                                        <span class="titre_menu_h3">Tiramisu</span>
+                                        <span class="texte_menu_p">A la noisette</span>
+                                        <span class="prix">23€</span>
+                                    <form class="button_checked" method="POST" action="traitement.php">
+                                        <input type="checkbox" hidden name="button_filtre" id="check_millefeuille" />
+                                    </form>
+                                </span>
+                            </a>
+                </div>
+                <form class="formulaire_boutons" method="POST" action="traitement.php">  
+                        <!--Bouton commander-->
+                        <button type="button" class="search_button">
+                                <span>Commander</span>
+                        </button>
+            </form>
+        </section>
+    </div>
+        <footer>
+        <!--Footer-->
+            <div class="bloc_footer">
+                <!--Nav Footer-->
+                <div class="bloc_nav_footer">
+                        <div class="logo_footer">
+                                <a href="">
+                                    <img class="logo_mini_footer" src="images/logo/ohmyfood@2x.svg" alt="logo_mini_footer">
+                                </a>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-utensils icone_blanc"></i>
+                                    <a href="">Proposer un restaurant</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-hands-helping icone_blanc"></i>
+                                    <a href="">Devenir partenaire</a>
+                                </li>
+                                <li>
+                                    <a href="">Mentions légales</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>   
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
