@@ -17,14 +17,15 @@
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  padding-top: 0px;
+  width: 90%;
+  margin: 10px;
   padding-bottom: 10px;
   border-radius: 2px;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   align-content: stretch;
+  margin: 5px;
 }
 .bloc_titre h1 {
   font-family: "Shrikhand", sans-serif;
@@ -32,9 +33,17 @@
 }
 
 h2 {
-  padding: 10px;
   font-weight: lighter;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  padding: 10px;
+  &--:after {
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 .bloc_menu_entree h2 :hover {
   border-bottom: 3px solid $color_secondary;
@@ -42,11 +51,11 @@ h2 {
 
 .titre_menu_h3 {
   color: $black;
-  font-size: 1.05em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 .texte_menu_p {
-  font-size: 1em;
+  font-size: 0.8em;
   color: $black;
 }
 .search_button {
@@ -54,7 +63,7 @@ h2 {
 }
 .prix {
   display: flex;
-  font-size: 1.05em;
+  font-size: 1em;
   font-weight: bold;
   color: $black;
 }
@@ -68,17 +77,45 @@ h2 {
 }
 .menuItem__icon {
   padding: 5px;
-  color: $color_tertiaire;
-  border: 2px solid $white;
+  color: #99e2d0;
+  border: 2px solid #fff;
   border-radius: 100px;
   position: relative;
-  background-color: $white;
-  font-size: 18px;
-  top: -12px;
-  right: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  top: -15px;
+  left: -5px;
 }
 #check_menu_valide {
   position: relative;
   left: 20px;
   bottom: 10px;
+}
+#bloc_plats {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  align-content: stretch;
+  margin: 5px;
+}
+#bloc_dessert {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  align-content: stretch;
+  margin: 5px;
 }

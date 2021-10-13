@@ -1,9 +1,15 @@
 @import "../Util/_variables.scss";
 
 .header_main {
-  @include flex_column;
+  @include flex_column_center;
+  position: sticky;
+  top: 0;
+  background: white;
+  height: 65px;
+  box-shadow: 0 2px 4px #636363cc;
+  z-index: 2;
 }
-h1 {
+.titre_page_accueil {
   display: block;
   text-align: start;
   margin-block-start: 10%;
@@ -12,30 +18,19 @@ h1 {
   font-size: 1.3em;
   font-weight: bold;
   margin: 15px 20px 5px 20px;
-}
-/*Logo*/
-
-#logo {
-  display: block;
-  width: auto;
-  padding-left: 90px;
-  font-weight: bold;
-  padding-top: 20px;
-}
-#logo img {
-  width: 60%;
-  height: 50%;
-  object-fit: contain;
-}
-
-h1 {
   display: block;
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
-  margin: 15px 50px 5px 50px;
+  margin: 40px 80px 30px 80px;
 }
+/*Logo*/
+
+.logo_header {
+  width: 190px;
+}
+
 .sous_titre {
   padding-top: 0%;
   font-size: 1.2em;
@@ -45,25 +40,24 @@ h1 {
 
 .button {
   @include flex_center;
-  border: 2px solid $container;
+  border: 2px solid #f2f2f2;
   display: flex;
   flex-wrap: wrap;
   border-radius: 50px;
   position: relative;
-  z-index: 0;
-  height: 15px;
   background-color: -webkit-gradient(
     linear,
     left bottom,
     left top,
-    from($color_primary),
-    to($color_secondary)
+    from(#9356dc),
+    to(#ff79da)
   );
-
-  background: -o-linear-gradient(bottom, $color_primary, $color_secondary);
-  background: linear-gradient(to top, $color_primary, $color_secondary);
-  color: $white;
-  font-size: 1.2em;
+  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  color: #fff;
+  font-size: 1.1em;
+  padding: 25px;
+  flex-direction: column;
 }
 
 .icone_filtres {

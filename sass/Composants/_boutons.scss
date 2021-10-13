@@ -28,7 +28,7 @@
   border: 3px solid $placeholder;
   padding: 0px 0px 0px 5px;
   font-size: 17px;
-  font-family: "Raleway";
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   background: $placeholder;
 }
@@ -56,6 +56,4 @@ input .placeholder {
   );
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
-  color: #fff;
-  font-size: 1.2em;
 }

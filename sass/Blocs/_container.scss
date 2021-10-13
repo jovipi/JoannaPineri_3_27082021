@@ -2,14 +2,17 @@
 
 .container {
   background-color: $container;
+  padding: 0px 0px 40px 0px;
 }
 .container_desktop {
   background-color: $container;
   padding: 0px 0px 60px 0px;
 }
 .container_menu {
-  background-color: $container;
-  margin-top: -50px;
-  z-index: 1;
-  position: relative;
+  background-color: #f2f2f2;
+  margin-top: -70px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50px 50px 0px 0px;
+  overflow: hidden;
 }

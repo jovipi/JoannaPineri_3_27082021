@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2? family= Roboto & display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Pour s'adapter au smartphone-->
@@ -20,13 +20,11 @@
 
         <header class="header">
             <div class="header_main">
-                <!--En-tête-->
                 <!--Logo-->
-                <div id="logo">
                         <a href="">
-                            <img src="images/logo/ohmyfood.png" alt="logo site">
+                            <img class="logo_header"src="images/logo/ohmyfood.png" alt="logo site">
                         </a>
-                </div>
+            </div>
     <div class="container">
                 <form class="formulaire_boutons" method="POST" action="traitement.php">
                     <!--Zone de Recherche-->
@@ -38,7 +36,7 @@
             <!--Le corps de Header-->
                     <div class="title_main">
                 <!--l'entête du corps-->
-                        <h1>Réservez le menu qui vous convient</h1>
+                        <h1 class="titre_page_accueil">Réservez le menu qui vous convient</h1>
                             <p class="sous_titre">Découvrez les restaurants d'exceptions, sélectionnés par nos soins</p>
                     </div>
             
@@ -90,39 +88,44 @@
                     <h2>Restaurants</h2>
                 </div>
                     <!--Photos des etablissements-->
-                <a href="la_palette_du_gout.html" class="etablissement">     
-                    <span class="cadre_etablissement">
-                        <span class="cadre">
-                        <img src="images/restaurants/La_palette_du_gout.jpg" alt="la_palette_de_gout">
-                        <span class="nouveau">Nouveau</span>
+                <div class="bloc_photo">
+                    <a href="la_palette_du_gout.html" class="etablissement">     
+                        <span class="cadre_etablissement">
+                            <img src="images/restaurants/La_palette_du_gout.jpg" alt="la_palette_de_gout">
+                            <span class="nouveau">Nouveau</span>
+                            <span class="titre_h3">La palette de goût<i class="far fa-heart"></i></span>
+                            <span class="texte_p">Ménilmontant</span>           
                         </span>
-                        <span class="titre_h3">La palette de goût<i class="far fa-heart"></i></span>
-                        <span class="texte_p">Ménilmontant</span>           
-                    </span>
-                </a>
-                <a href="la_note_enchantee.html" class="etablissement">
-                    <span class="cadre_etablissement">
-                        <img src="images/restaurants/La_note_enchante.jpg" alt="la_note_enchante">
-                        <span class="nouveau">Nouveau</span>
-                        <span class="titre_h3">La note enchantée<i class="far fa-heart"></i></span>
-                        <span class="texte_p">Charonne</span>
-                    </span>
-                </a>
-                <a href="a_la_francaise.html" class="etablissement">
-                    <span class="cadre_etablissement">
-                        <img src="images/restaurants/a_la_francaise.jpg" alt="a_la_francaise">
-                            <span class="titre_h3_sans_nouveau">A la française<i class="far fa-heart"></i></span>
+                    </a>
+                </div>
+                <div class="bloc_photo">
+                    <a href="la_note_enchantee.html" class="etablissement">
+                        <span class="cadre_etablissement">
+                            <img src="images/restaurants/La_note_enchante.jpg" alt="la_note_enchante">
+                            <span class="nouveau">Nouveau</span>
+                            <span class="titre_h3">La note enchantée<i class="far fa-heart"></i></span>
+                            <span class="texte_p">Charonne</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="bloc_photo">
+                    <a href="a_la_francaise.html" class="etablissement">
+                        <span class="cadre_etablissement">
+                            <img src="images/restaurants/a_la_francaise.jpg" alt="a_la_francaise">
+                            <span class="titre_h3">A la française<i class="far fa-heart"></i></span>
                             <span class="texte_p">Cité rouge</span>
-                    </span>
-                </a>
-                <a href="le_delice_des_sens.html" class="etablissement">
-                    <span class="cadre_etablissement">
-                        <img src="images/restaurants/le_delice_des_sens.jpg" alt="le_delice_des_sens">
-                                <span class="titre_h3_sans_nouveau">Le délice des sens<i class="far fa-heart"></i></span>
-                                <span class="texte_p">Folie-Méricourt</span>
                         </span>
-                    </span>
-                </a>    
+                    </a>
+                </div>
+                <div class="bloc_photo">
+                    <a href="le_delice_des_sens.html" class="etablissement">
+                        <span class="cadre_etablissement">
+                            <img src="images/restaurants/le_delice_des_sens.jpg" alt="le_delice_des_sens">
+                            <span class="titre_h3">Le délice des sens<i class="far fa-heart"></i></span>
+                            <span class="texte_p">Folie-Méricourt</span>
+                        </span>
+                    </a>
+                </div>  
         </section>
     </div> 
         <!--Footer-->

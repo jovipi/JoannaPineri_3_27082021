@@ -4,12 +4,19 @@
   padding: 10px 0px 10px 20px;
 }
 /*------cadre restaurants-----------*/
+.bloc_photo {
+  position: relative;
+  background: white;
+  height: 250px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 7px #d3d3d3;
+}
 .etablissement {
   display: block;
   border-radius: 35px;
   box-shadow: 0px 0px 0px grey;
   width: 100%;
-  padding: 15px;
 }
 .cadre_etablissement {
   display: block;
@@ -36,19 +43,13 @@
   margin: 20px 10px 0px 5px;
   padding: 20px 0px 2px 0px;
 }
-.titre_h3 {
-  @include flex_row_start_space-between;
-  font-weight: bold;
-  color: black;
-  font-size: 1em;
-  padding: 0px 0px 0px 15px;
-}
+
 .texte_p {
   @include flex_column_flex-start;
   padding: 0px 0px 0px 15px;
   color: $black;
 }
-.titre_h3_sans_nouveau {
+.titre_h3 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
