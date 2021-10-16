@@ -260,6 +260,16 @@ footer li i {
   width: 100%;
 }
 
+.container_menu_2 {
+  background-color: #f2f2f2;
+  margin-top: -135px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 35px 35px 0px 0px;
+  overflow: hidden;
+  width: 100%;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
