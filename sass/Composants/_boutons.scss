@@ -12,27 +12,24 @@
 }
 .position_button {
   width: 100%;
-  height: 50px;
+  height: 45px;
   border: 1px solid $placeholder;
   background: $placeholder;
   text-align: center;
   color: black;
-  font-size: 15px;
   cursor: pointer;
   padding: 0px 0px 0px 60px;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #search {
   border: 3px solid $placeholder;
-  padding: 0px 0px 0px 5px;
-  font-size: 17px;
+  padding: 0px 0px 0px 15px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   background: $placeholder;
-}
-input .placeholder {
   color: black;
 }
 
@@ -46,7 +43,7 @@ input .placeholder {
   text-align: center;
   z-index: 0;
   height: 15px;
-  margin: 10px 60px 30px 65px;
+  margin: 20px 40px 10px 60px;
   background-color: -webkit-gradient(
     linear,
     left bottom,

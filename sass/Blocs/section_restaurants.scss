@@ -1,15 +1,15 @@
 .titre_bloc h2 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
-  padding: 10px 0px 10px 20px;
+  padding: 10px 0px 10px 17px;
 }
 /*------cadre restaurants-----------*/
 .bloc_photo {
   position: relative;
   background: white;
-  height: 250px;
+  height: 230px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 .etablissement {
@@ -21,7 +21,7 @@
 .cadre_etablissement {
   display: block;
   width: 100%;
-  height: 250px;
+  height: 230px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
   background-color: $white;
@@ -29,7 +29,7 @@
 .cadre_etablissement img {
   display: block;
   width: 100%;
-  height: 170px;
+  height: 160px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -41,13 +41,14 @@
   width: 100%;
   height: 100%;
   margin: 20px 10px 0px 5px;
-  padding: 20px 0px 2px 0px;
+  padding: 40px 0px 2px 0px;
 }
 
 .texte_p {
   @include flex_column_flex-start;
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 10px;
   color: $black;
+  font-size: 0.8em;
 }
 .titre_h3 {
   display: flex;
@@ -58,14 +59,19 @@
   flex-wrap: wrap;
   font-weight: bold;
   color: black;
-  font-size: 1em;
-  padding: 20px 0px 0px 15px;
+  font-size: 0.9em;
+  padding: 15px 0px 0px 10px;
 }
 .nouveau {
   @include nouveau;
 }
-.far {
-  padding: 0px 30px 0px 10px;
-  font-size: 30px;
-  font-weight: lighter;
+.icone_heart {
+  padding: 5px 0px 0px 40px;
+  font-size: 22px;
+}
+.icone_heart_accueil {
+  padding: 5px 0px 0px 0px;
+  font-size: 22px;
+  position: absolute;
+  left: 250px;
 }

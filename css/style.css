@@ -25,28 +25,24 @@ body {
 
 .position_button {
   width: 100%;
-  height: 50px;
+  height: 45px;
   border: 1px solid #d8d7d7;
   background: #d8d7d7;
   text-align: center;
   color: black;
-  font-size: 15px;
   cursor: pointer;
   padding: 0px 0px 0px 60px;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #search {
   border: 3px solid #d8d7d7;
-  padding: 0px 0px 0px 5px;
-  font-size: 17px;
+  padding: 0px 0px 0px 15px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   background: #d8d7d7;
-}
-
-input .placeholder {
   color: black;
 }
 
@@ -60,7 +56,7 @@ input .placeholder {
   text-align: center;
   z-index: 0;
   height: 15px;
-  margin: 10px 60px 30px 65px;
+  margin: 20px 40px 10px 60px;
   background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -122,7 +118,7 @@ footer li i {
 }
 
 .logo_mini_footer {
-  width: 40%;
+  width: 38%;
   padding: 15px 0px 15px 0px;
 }
 
@@ -131,7 +127,7 @@ footer li i {
 }
 
 .bloc_entier_footer {
-  margin-block-start: 1020px;
+  margin-block-start: 958px;
 }
 
 .header_main {
@@ -160,20 +156,20 @@ footer li i {
   margin: 15px 20px 5px 20px;
   display: block;
   text-align: center;
+  font-weight: 4000;
+  font-size: 1.4em;
   font-weight: bold;
-  font-size: 1.6em;
-  font-weight: bold;
-  margin: 40px 80px 30px 80px;
+  margin: 36px 50px 10px 50px;
 }
 
 /*Logo*/
 .logo_header {
-  width: 190px;
+  width: 150px;
 }
 
 .sous_titre {
   padding-top: 0%;
-  font-size: 1.2em;
+  font-size: 1.02em;
   padding: 0px 5px 10px 20px;
   text-align: center;
 }
@@ -192,15 +188,15 @@ footer li i {
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
-  font-size: 1.1em;
-  padding: 25px;
+  font-size: 0.9em;
+  padding: 23px;
   flex-direction: column;
 }
 
 .icone_filtres {
   font-weight: 900;
-  padding: 20px;
-  font-size: 20px;
+  padding: 20px 25px 20px 20px;
+  font-size: 18px;
   color: #8a8787;
 }
 
@@ -213,13 +209,13 @@ footer li i {
   border-radius: 20px;
   position: relative;
   z-index: 0;
-  height: 80px;
+  height: 65px;
   margin: 0px 0px 0px 15px;
   flex-direction: row;
   align-content: space-around;
   padding: 10px;
   background-color: #f2f2f2;
-  box-shadow: 0px 0px 10px #d8d7d7;
+  box-shadow: 0px 5px 10px #d8d7d7;
 }
 
 .circle-icon {
@@ -233,9 +229,10 @@ footer li i {
   border-radius: 50px;
   z-index: 2;
   position: relative;
-  top: 53px;
+  top: 46px;
   color: #fff;
   left: 1px;
+  font-size: 12px;
 }
 
 .nom_filtres {
@@ -258,8 +255,9 @@ footer li i {
   margin-top: -70px;
   z-index: 2;
   position: absolute;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 35px 35px 0px 0px;
   overflow: hidden;
+  width: 100%;
 }
 
 * {
@@ -275,12 +273,12 @@ footer li i {
 }
 
 .titre_fonctionnement {
-  padding: 20px 0px 5px 10px;
+  padding: 30px 0px 0px 0px;
 }
 
 .titre_fonctionnement h2 {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.3em;
+  font-weight: 900;
 }
 
 .button_filters {
@@ -293,18 +291,18 @@ footer li i {
 }
 
 .titre_bloc h2 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
-  padding: 10px 0px 10px 20px;
+  padding: 10px 0px 10px 17px;
 }
 
 /*------cadre restaurants-----------*/
 .bloc_photo {
   position: relative;
   background: white;
-  height: 250px;
+  height: 230px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 
@@ -318,7 +316,7 @@ footer li i {
 .cadre_etablissement {
   display: block;
   width: 100%;
-  height: 250px;
+  height: 230px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
   background-color: #fff;
@@ -327,7 +325,7 @@ footer li i {
 .cadre_etablissement img {
   display: block;
   width: 100%;
-  height: 170px;
+  height: 160px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -342,7 +340,7 @@ footer li i {
   width: 100%;
   height: 100%;
   margin: 20px 10px 0px 5px;
-  padding: 20px 0px 2px 0px;
+  padding: 40px 0px 2px 0px;
 }
 
 .texte_p {
@@ -351,8 +349,9 @@ footer li i {
   align-items: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 10px;
   color: #000;
+  font-size: 0.8em;
 }
 
 .titre_h3 {
@@ -364,8 +363,8 @@ footer li i {
   flex-wrap: wrap;
   font-weight: bold;
   color: black;
-  font-size: 1em;
-  padding: 20px 0px 0px 15px;
+  font-size: 0.9em;
+  padding: 15px 0px 0px 10px;
 }
 
 .nouveau {
@@ -380,10 +379,16 @@ footer li i {
   padding: 8px 15px 8px 15px;
 }
 
-.far {
-  padding: 0px 30px 0px 10px;
-  font-size: 30px;
-  font-weight: lighter;
+.icone_heart {
+  padding: 5px 0px 0px 40px;
+  font-size: 22px;
+}
+
+.icone_heart_accueil {
+  padding: 5px 0px 0px 0px;
+  font-size: 22px;
+  position: absolute;
+  left: 250px;
 }
 
 * {
@@ -411,28 +416,24 @@ body {
 
 .position_button {
   width: 100%;
-  height: 50px;
+  height: 45px;
   border: 1px solid #d8d7d7;
   background: #d8d7d7;
   text-align: center;
   color: black;
-  font-size: 15px;
   cursor: pointer;
   padding: 0px 0px 0px 60px;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #search {
   border: 3px solid #d8d7d7;
-  padding: 0px 0px 0px 5px;
-  font-size: 17px;
+  padding: 0px 0px 0px 15px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   background: #d8d7d7;
-}
-
-input .placeholder {
   color: black;
 }
 
@@ -446,7 +447,7 @@ input .placeholder {
   text-align: center;
   z-index: 0;
   height: 15px;
-  margin: 10px 60px 30px 65px;
+  margin: 20px 40px 10px 60px;
   background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -478,20 +479,20 @@ input .placeholder {
   margin: 15px 20px 5px 20px;
   display: block;
   text-align: center;
+  font-weight: 4000;
+  font-size: 1.4em;
   font-weight: bold;
-  font-size: 1.6em;
-  font-weight: bold;
-  margin: 40px 80px 30px 80px;
+  margin: 36px 50px 10px 50px;
 }
 
 /*Logo*/
 .logo_header {
-  width: 190px;
+  width: 150px;
 }
 
 .sous_titre {
   padding-top: 0%;
-  font-size: 1.2em;
+  font-size: 1.02em;
   padding: 0px 5px 10px 20px;
   text-align: center;
 }
@@ -510,15 +511,15 @@ input .placeholder {
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
-  font-size: 1.1em;
-  padding: 25px;
+  font-size: 0.9em;
+  padding: 23px;
   flex-direction: column;
 }
 
 .icone_filtres {
   font-weight: 900;
-  padding: 20px;
-  font-size: 20px;
+  padding: 20px 25px 20px 20px;
+  font-size: 18px;
   color: #8a8787;
 }
 
@@ -531,13 +532,13 @@ input .placeholder {
   border-radius: 20px;
   position: relative;
   z-index: 0;
-  height: 80px;
+  height: 65px;
   margin: 0px 0px 0px 15px;
   flex-direction: row;
   align-content: space-around;
   padding: 10px;
   background-color: #f2f2f2;
-  box-shadow: 0px 0px 10px #d8d7d7;
+  box-shadow: 0px 5px 10px #d8d7d7;
 }
 
 .circle-icon {
@@ -551,9 +552,10 @@ input .placeholder {
   border-radius: 50px;
   z-index: 2;
   position: relative;
-  top: 53px;
+  top: 46px;
   color: #fff;
   left: 1px;
+  font-size: 12px;
 }
 
 .nom_filtres {
@@ -571,7 +573,7 @@ input .placeholder {
 }
 
 #logo_page_menu img {
-  max-width: 80%;
+  max-width: 65%;
   max-height: 50%;
   object-fit: contain;
 }
@@ -579,8 +581,9 @@ input .placeholder {
 .icone_fleche {
   position: absolute;
   left: 40px;
-  top: 30px;
+  top: 25px;
   padding: 0px 250px 0px 0px;
+  color: black;
 }
 
 .header_main {
@@ -590,6 +593,7 @@ input .placeholder {
   align-content: center;
   flex-wrap: wrap;
   align-items: center;
+  padding: 20px 0px 0px 0px;
 }
 
 .image_header {
@@ -619,7 +623,7 @@ input .placeholder {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px 0px 30px 0px;
+  padding: 20px 0px 30px 15px;
 }
 
 .titre_page_menu {
@@ -638,10 +642,10 @@ input .placeholder {
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
-  width: 95%;
-  height: 70px;
+  width: 100%;
+  height: 60px;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 0px 10px grey;
   margin: 10px;
   flex-direction: column;
@@ -649,21 +653,20 @@ input .placeholder {
   justify-content: space-around;
   align-content: space-between;
   align-items: flex-start;
+  position: relative;
 }
 
 #bloc_entree {
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 10px;
+  width: 100%;
   padding-bottom: 10px;
   border-radius: 2px;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center;
-  align-content: stretch;
-  margin: 5px;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .bloc_titre h1 {
@@ -672,9 +675,9 @@ input .placeholder {
 }
 
 h2 {
+  font-size: 1em;
+  padding: 15px;
   font-weight: lighter;
-  font-size: 1.1em;
-  padding: 10px;
 }
 h2--:after {
   width: 3rem;
@@ -722,19 +725,24 @@ h2--:after {
 }
 
 .prix {
-  display: flex;
-  font-size: 1em;
   font-weight: bold;
+  position: absolute;
+  top: 14px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  left: 254px;
+  top: 34px;
+  font-size: 0.9em;
   color: #000;
 }
 
 .button_checked {
   background-color: #99e2d0;
-  font-size: 61px;
+  font-size: 53px;
   padding: 0px 10px 0px 20px;
   border-radius: 0px 20px 20px 0px;
   position: relative;
-  left: 10px;
+  left: 15px;
 }
 
 .menuItem__icon {
@@ -745,7 +753,7 @@ h2--:after {
   position: relative;
   background-color: #fff;
   font-size: 12px;
-  top: -15px;
+  top: -13px;
   left: -5px;
 }
 
@@ -795,7 +803,7 @@ h2--:after {
 }
 
 #logo_page_menu img {
-  max-width: 80%;
+  max-width: 65%;
   max-height: 50%;
   object-fit: contain;
 }
@@ -803,8 +811,9 @@ h2--:after {
 .icone_fleche {
   position: absolute;
   left: 40px;
-  top: 30px;
+  top: 25px;
   padding: 0px 250px 0px 0px;
+  color: black;
 }
 
 .header_main {
@@ -814,6 +823,7 @@ h2--:after {
   align-content: center;
   flex-wrap: wrap;
   align-items: center;
+  padding: 20px 0px 0px 0px;
 }
 
 .image_header {
@@ -843,7 +853,7 @@ h2--:after {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px 0px 30px 0px;
+  padding: 20px 0px 30px 15px;
 }
 
 .titre_page_menu {
@@ -862,10 +872,10 @@ h2--:after {
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
-  width: 95%;
-  height: 70px;
+  width: 100%;
+  height: 60px;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 0px 10px grey;
   margin: 10px;
   flex-direction: column;
@@ -873,21 +883,20 @@ h2--:after {
   justify-content: space-around;
   align-content: space-between;
   align-items: flex-start;
+  position: relative;
 }
 
 #bloc_entree {
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 10px;
+  width: 100%;
   padding-bottom: 10px;
   border-radius: 2px;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center;
-  align-content: stretch;
-  margin: 5px;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .bloc_titre h1 {
@@ -896,9 +905,9 @@ h2--:after {
 }
 
 h2 {
+  font-size: 1em;
+  padding: 15px;
   font-weight: lighter;
-  font-size: 1.1em;
-  padding: 10px;
 }
 h2--:after {
   width: 3rem;
@@ -946,19 +955,24 @@ h2--:after {
 }
 
 .prix {
-  display: flex;
-  font-size: 1em;
   font-weight: bold;
+  position: absolute;
+  top: 14px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  left: 254px;
+  top: 34px;
+  font-size: 0.9em;
   color: #000;
 }
 
 .button_checked {
   background-color: #99e2d0;
-  font-size: 61px;
+  font-size: 53px;
   padding: 0px 10px 0px 20px;
   border-radius: 0px 20px 20px 0px;
   position: relative;
-  left: 10px;
+  left: 15px;
 }
 
 .menuItem__icon {
@@ -969,7 +983,7 @@ h2--:after {
   position: relative;
   background-color: #fff;
   font-size: 12px;
-  top: -15px;
+  top: -13px;
   left: -5px;
 }
 
