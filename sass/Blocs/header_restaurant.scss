@@ -1,4 +1,5 @@
 /*Logo*/
+/*Logo*/
 #logo_page_menu {
   display: block;
   max-width: auto;
@@ -6,14 +7,30 @@
   font-weight: bold;
   padding-top: 20px;
 }
+#logo_page_menu_2 {
+  display: block;
+  max-width: auto;
+  padding-left: 80px;
+  font-weight: bold;
+  padding-top: 20px;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  padding-bottom: 10px;
+}
 #logo_page_menu img {
+  max-width: 65%;
+  max-height: 50%;
+  object-fit: contain;
+}
+#logo_page_menu_2 img {
   max-width: 65%;
   max-height: 50%;
   object-fit: contain;
 }
 .icone_fleche {
   position: absolute;
-  left: 40px;
+  left: 30px;
   top: 25px;
   padding: 0px 250px 0px 0px;
   color: black;

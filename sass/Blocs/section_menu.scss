@@ -1,7 +1,7 @@
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 60px;
   padding: 10px;
   border-radius: 15px;
@@ -18,19 +18,18 @@
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 10px;
+  width: 100%;
   padding-bottom: 10px;
   border-radius: 2px;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   align-content: stretch;
-  margin: 5px;
 }
 .bloc_titre h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: bold;
+  font-size: 1.4em;
 }
 
 h2 {
@@ -101,27 +100,23 @@ h2 {
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 10px;
+  width: 100%;
   padding-bottom: 10px;
   border-radius: 2px;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   align-content: stretch;
-  margin: 5px;
 }
 #bloc_dessert {
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 10px;
+  width: 100%;
   padding-bottom: 10px;
   border-radius: 2px;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   align-content: stretch;
-  margin: 5px;
 }
