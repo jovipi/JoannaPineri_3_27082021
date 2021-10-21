@@ -1,0 +1,9 @@
+@import "../Util/_variables.scss";
+
+label :hover {
+  background-color: $color_background_filtres;
+}
+label :active {
+  background-color: $color_background_filtres;
+  opacity: 0;
+}

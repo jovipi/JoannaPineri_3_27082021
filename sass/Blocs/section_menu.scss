@@ -1,7 +1,7 @@
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
-  width: 90%;
+  width: 93%;
   height: 60px;
   padding: 10px;
   border-radius: 15px;
@@ -36,15 +36,16 @@ h2 {
   font-size: 1em;
   padding: 15px;
   font-weight: lighter;
-  &--:after {
-    width: 3rem;
-    height: 0.25rem;
-    background-color: #99e2d0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
 }
+h2 :after {
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .bloc_menu_entree h2 :hover {
   border-bottom: 3px solid $color_secondary;
 }
@@ -55,7 +56,7 @@ h2 {
   font-weight: bold;
 }
 .texte_menu_p {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: $black;
 }
 .search_button {
