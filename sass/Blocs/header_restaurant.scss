@@ -72,6 +72,17 @@
   flex-wrap: wrap;
   padding: 20px 0px 30px 15px;
 }
+.icone_heart :active {
+  background-color: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#9356dc),
+    to(#ff79da)
+  );
+  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
+  background: linear-gradient(to top, #9356dc, #ff79da);
+}
 .titre_page_menu {
   display: flex;
   text-align: center;

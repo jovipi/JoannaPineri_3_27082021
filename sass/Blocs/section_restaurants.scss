@@ -64,11 +64,28 @@
 }
 .nouveau {
   @include nouveau;
+  -webkit-animation: nouveau 3.5s;
+  animation: nouveau 3.5s;
+  animation-fill-mode: backwards infinite;
 }
+
 .icone_heart {
   padding: 5px 0px 0px 30px;
   font-size: 22px;
 }
+.icone_heart :hover {
+  background-color: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#9356dc),
+    to(#ff79da)
+  );
+  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  animation: bg-pan-right 8s both;
+}
+
 .icone_heart_accueil {
   padding: 5px 0px 0px 0px;
   font-size: 22px;

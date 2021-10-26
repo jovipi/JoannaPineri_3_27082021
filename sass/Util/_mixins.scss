@@ -78,7 +78,7 @@
 }
 @mixin button {
   @include flex_center;
-  padding: 20px 40px 40px 40px;
+  padding: 10px 20px 30px 20px;
   border: 2px solid $container;
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +98,7 @@
   background: -o-linear-gradient(bottom, $color_primary, $color_secondary);
   background: linear-gradient(to top, $color_primary, $color_secondary);
   color: $white;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 @mixin filtre {
   @include flex_start_align_center;

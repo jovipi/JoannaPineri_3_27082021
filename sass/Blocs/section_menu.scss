@@ -13,6 +13,7 @@
   align-content: space-between;
   align-items: flex-start;
   position: relative;
+  animation: scale-in-ver-top 1s;
 }
 #bloc_entree {
   background-color: #f2f2f2;
@@ -37,13 +38,13 @@ h2 {
   padding: 15px;
   font-weight: lighter;
 }
-h2 :after {
-  width: 3rem;
-  height: 0.25rem;
+.green_bar::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 40px;
+  height: 3px;
   background-color: #99e2d0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 .bloc_menu_entree h2 :hover {
@@ -52,7 +53,7 @@ h2 :after {
 
 .titre_menu_h3 {
   color: $black;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: bold;
 }
 .texte_menu_p {
@@ -68,19 +69,23 @@ h2 :after {
   top: 14px;
   flex-direction: column;
   flex-wrap: wrap;
-  left: 254px;
+  left: 220px;
   top: 34px;
-  font-size: 0.9em;
+  font-size: 0.85em;
   color: $black;
+  animation: slide-left-prix 2s;
 }
+
 .button_checked {
   background-color: $color_tertiaire;
   font-size: 53px;
   padding: 0px 10px 0px 20px;
   border-radius: 0px 20px 20px 0px;
   position: relative;
-  left: 15px;
+  left: 20px;
+  animation: slide-left 2s;
 }
+
 .menuItem__icon {
   padding: 5px;
   color: #99e2d0;
@@ -92,6 +97,7 @@ h2 :after {
   top: -13px;
   left: -5px;
 }
+
 #check_menu_valide {
   position: relative;
   left: 20px;
