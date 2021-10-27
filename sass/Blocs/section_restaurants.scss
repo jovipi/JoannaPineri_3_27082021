@@ -64,8 +64,8 @@
 }
 .nouveau {
   @include nouveau;
-  -webkit-animation: nouveau 3.5s;
-  animation: nouveau 3.5s;
+  -webkit-animation: nouveau 1s infinite;
+  animation: nouveau 1s infinite;
   animation-fill-mode: backwards infinite;
 }
 
@@ -73,7 +73,14 @@
   padding: 5px 0px 0px 30px;
   font-size: 22px;
 }
-.icone_heart :hover {
+.icone_heart ::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   background-color: -webkit-gradient(
     linear,
     left bottom,
@@ -84,6 +91,12 @@
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
   animation: bg-pan-right 8s both;
+  border-radius: 50% 50% 0 0;
+  transition: all 0.5s;
+}
+.icone_heart :hover ::before {
+  top: 0;
+  border-radius: 0;
 }
 
 .icone_heart_accueil {
