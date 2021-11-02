@@ -1,7 +1,7 @@
 .titre_bloc h2 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: bold;
-  padding: 10px 0px 10px 17px;
+  padding: 30px 0px 0px 30px;
 }
 /*------cadre restaurants-----------*/
 .bloc_photo {
@@ -11,6 +11,7 @@
   border-radius: 20px;
   margin: 10px;
   box-shadow: 2px 2px 7px #d3d3d3;
+  width: 100%;
 }
 .etablissement {
   display: block;
@@ -38,10 +39,8 @@
   @include flex_space_between;
   margin-bottom: 15px;
   font-size: 20px;
-  width: 100%;
   height: 100%;
-  margin: 20px 10px 0px 5px;
-  padding: 40px 0px 2px 0px;
+  margin: 20px 30px 0px 5px;
 }
 
 .texte_p {
@@ -64,9 +63,6 @@
 }
 .nouveau {
   @include nouveau;
-  -webkit-animation: nouveau 1s infinite;
-  animation: nouveau 1s infinite;
-  animation-fill-mode: backwards infinite;
 }
 
 .icone_heart {
@@ -104,4 +100,68 @@
   font-size: 22px;
   position: absolute;
   right: 40px;
+}
+/*----------------------------------------------------------------------------------------------------
+                                      Medias Queries
+------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 540px) and (max-width: 735px) {
+  #section_restaurants {
+    @include media_queries_mini_ipad;
+    padding: 0px;
+    margin: 20px 10px 0px 30px;
+  }
+  .bloc_photo {
+    position: relative;
+    background: white;
+    height: 230px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    width: 45%;
+  }
+  .titre_bloc {
+    padding: 30px 0px 0px 20px;
+  }
+  .titre_bloc h2 {
+    font-size: 1.3em;
+  }
+}
+
+/*Pour tous types de tablettes*/
+@media all and (min-width: 736px) and (max-width: 990px) {
+  #section_restaurants {
+    @include media_queries_mini_ipad;
+    padding: 0px;
+    margin: 20px 10px 0px 30px;
+  }
+  .bloc_photo {
+    position: relative;
+    background: white;
+    height: 230px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+    width: 45%;
+  }
+  .titre_bloc {
+    padding: 30px 0px 0px 20px;
+  }
+  .titre_bloc h2 {
+    font-size: 1.3em;
+    padding: 30px 0px 0px 40px;
+  }
+}
+/* Version Desktop*/
+@media all and (min-width: 991px) {
+  #section_restaurants {
+    @include desktop_restaurant;
+  }
+  .bloc_photo {
+    width: 35%;
+  }
+  .titre_bloc h2 {
+    padding: 40px 10px 0px 30px;
+    margin: 30px;
+  }
 }
