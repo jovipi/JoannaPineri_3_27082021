@@ -449,30 +449,23 @@ footer li i {
   right: 20px;
 }
 
-i .far .far-heart.icone_heart {
-  padding: 5px 0px 0px 30px;
-  font-size: 22px;
-  background-color: linear-gradient(120deg, #9356dc 0%, #ff79de 100%);
+i.far.fa-heart.icone_heart_accueil {
+  opacity: 0.5;
+  right: 25px;
+  bottom: 25px;
+  padding: 8px 20px 0px 20px;
+  font-size: 1.2em;
 }
 
-i .fas .fas-heart.icone_heart {
+i.fas.fa-heart.icone_heart_accueil {
   padding: 5px 0px 0px 0px;
   font-size: 1.2em;
-  background: linear-gradient(90deg, #9356dc 0%, #ff79de 100%);
+  background: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   position: absolute;
-  right: 25px;
-  top: 30px;
-  right: 0px;
-  top: 8px;
-}
-
-i.far.fa-heart.icone_heart_accueil {
-  padding: 5px 0px 0px 0px;
-  font-size: 22px;
-  position: absolute;
-  right: 40px;
+  right: 20px;
+  top: 179px;
 }
 
 /*----------------------------------------------------------------------------------------------------
@@ -1473,6 +1466,17 @@ i.fas.fa-heart.icone_heart:hover {
   top: 30px;
   right: 0px;
   top: 3px;
+}
+
+i.fas.fa-heart.icone_heart_accueil:hover {
+  padding: 5px 0px 0px 0px;
+  font-size: 1.2em;
+  background: linear-gradient(90deg, #9356dc 0%, #ff79de 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 20px;
+  top: 179px;
 }
 
 /*# sourceMappingURL=style.css.map */

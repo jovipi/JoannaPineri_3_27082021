@@ -104,3 +104,17 @@ i.fas.fa-heart.icone_heart:hover {
   right: 0px;
   top: 3px;
 }
+i.fas.fa-heart.icone_heart_accueil:hover {
+  padding: 5px 0px 0px 0px;
+  font-size: 1.2em;
+  background: linear-gradient(
+    90deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 222, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 20px;
+  top: 179px;
+}
