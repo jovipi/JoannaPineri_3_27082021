@@ -449,33 +449,26 @@ footer li i {
   right: 20px;
 }
 
-.icone_heart {
+i .far .far-heart.icone_heart {
   padding: 5px 0px 0px 30px;
   font-size: 22px;
+  background-color: linear-gradient(120deg, #9356dc 0%, #ff79de 100%);
 }
 
-.icone_heart ::before {
-  content: "";
+i .fas .fas-heart.icone_heart {
+  padding: 5px 0px 0px 0px;
+  font-size: 1.2em;
+  background: linear-gradient(90deg, #9356dc 0%, #ff79de 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
-  background: linear-gradient(to top, #9356dc, #ff79da);
-  animation: bg-pan-right 8s both;
-  border-radius: 50% 50% 0 0;
-  transition: all 0.5s;
+  right: 25px;
+  top: 30px;
+  right: 0px;
+  top: 8px;
 }
 
-.icone_heart :hover ::before {
-  top: 0;
-  border-radius: 0;
-}
-
-.icone_heart_accueil {
+i.far.fa-heart.icone_heart_accueil {
   padding: 5px 0px 0px 0px;
   font-size: 22px;
   position: absolute;
@@ -816,8 +809,8 @@ body {
 }
 
 #logo_page_menu img {
-  max-width: 65%;
-  max-height: 50%;
+  width: 85%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -889,10 +882,29 @@ body {
   padding: 20px 0px 30px 15px;
 }
 
-.icone_heart :active {
-  background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
-  background: linear-gradient(to top, #9356dc, #ff79da);
+i.far.fa-heart.icone_heart {
+  opacity: 0.5;
+  right: 25px;
+  bottom: 25px;
+  padding: 8px 0px 0px 20px;
+  font-size: 1.2em;
+}
+
+.icones {
+  position: relative;
+}
+
+i.fas.fa-heart.icone_heart {
+  padding: 5px 0px 0px 0px;
+  font-size: 1.2em;
+  background: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  right: 0px;
+  top: 3px;
 }
 
 .titre_page_menu {
@@ -908,6 +920,15 @@ body {
   align-items: center;
 }
 
+/*--------------------------------------------------------------------------------------------------------
+                                    Media queries
+----------------------------------------------------------------------------------------------------------*/
+/* Pour mini tablettes*/
+@media screen and (min-width: 357px) and (max-width: 412px) {
+  .icone_fleche {
+    top: 30px;
+  }
+}
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
@@ -1015,22 +1036,10 @@ h2 {
   border-radius: 0px 20px 20px 0px;
   position: absolute;
   top: 0;
-  left: 310px;
-  right: 0;
+  right: 50px;
   bottom: 0;
   width: 65px;
-  overflow: hidden;
-  transform-origin: right 50%;
-  transform: translateX(65px);
-  transition-duration: 0.5s;
-}
-
-a .button_checked :hover {
-  overflow: visible;
-  transform-origin: right 50%;
-  transform: translateX(65px);
-  transition-duration: 0.5s;
-  animation: menu_valide 3s;
+  display: none;
 }
 
 .menuItem__icon {
@@ -1043,12 +1052,6 @@ a .button_checked :hover {
   font-size: 12px;
   top: -13px;
   left: -5px;
-}
-
-#check_menu_valide {
-  position: relative;
-  left: 20px;
-  bottom: 10px;
 }
 
 #bloc_plats {
@@ -1099,8 +1102,8 @@ a .button_checked :hover {
 }
 
 #logo_page_menu img {
-  max-width: 65%;
-  max-height: 50%;
+  width: 85%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -1172,10 +1175,29 @@ a .button_checked :hover {
   padding: 20px 0px 30px 15px;
 }
 
-.icone_heart :active {
-  background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
-  background: linear-gradient(to top, #9356dc, #ff79da);
+i.far.fa-heart.icone_heart {
+  opacity: 0.5;
+  right: 25px;
+  bottom: 25px;
+  padding: 8px 0px 0px 20px;
+  font-size: 1.2em;
+}
+
+.icones {
+  position: relative;
+}
+
+i.fas.fa-heart.icone_heart {
+  padding: 5px 0px 0px 0px;
+  font-size: 1.2em;
+  background: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  right: 0px;
+  top: 3px;
 }
 
 .titre_page_menu {
@@ -1191,6 +1213,15 @@ a .button_checked :hover {
   align-items: center;
 }
 
+/*--------------------------------------------------------------------------------------------------------
+                                    Media queries
+----------------------------------------------------------------------------------------------------------*/
+/* Pour mini tablettes*/
+@media screen and (min-width: 357px) and (max-width: 412px) {
+  .icone_fleche {
+    top: 30px;
+  }
+}
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
@@ -1298,22 +1329,10 @@ h2 {
   border-radius: 0px 20px 20px 0px;
   position: absolute;
   top: 0;
-  left: 310px;
-  right: 0;
+  right: 50px;
   bottom: 0;
   width: 65px;
-  overflow: hidden;
-  transform-origin: right 50%;
-  transform: translateX(65px);
-  transition-duration: 0.5s;
-}
-
-a .button_checked :hover {
-  overflow: visible;
-  transform-origin: right 50%;
-  transform: translateX(65px);
-  transition-duration: 0.5s;
-  animation: menu_valide 3s;
+  display: none;
 }
 
 .menuItem__icon {
@@ -1326,12 +1345,6 @@ a .button_checked :hover {
   font-size: 12px;
   top: -13px;
   left: -5px;
-}
-
-#check_menu_valide {
-  position: relative;
-  left: 20px;
-  bottom: 10px;
 }
 
 #bloc_plats {
@@ -1394,36 +1407,11 @@ label :active {
     opacity: 1;
   }
   50% {
-    opacity: 0.33;
+    opacity: 0.5;
   }
   100% {
     transform: rotate(360deg);
     opacity: 0;
-    display: none;
-  }
-}
-@keyframes menu_valide {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes menu_valide {
-  0% {
-    -webkit-transform: translateX(1000px);
-    -webkit-transform: translateX(1000px);
-    -webkit-opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
   }
 }
 @keyframes apparition_carte_menu {
@@ -1452,10 +1440,39 @@ label :active {
   animation: apparition_carte_menu 1.6s ease-in-out;
 }
 
-.icone_heart_accueil :active {
-  background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
-  background: linear-gradient(to top, #9356dc, #ff79da);
+.cadre_proposition:hover .button_checked {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transform: translateX(65px right);
+}
+
+.cadre_proposition:hover i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+
+.button_checked {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.cadre_proposition:hover .menuItem__icon {
+  display: contents;
+}
+
+/*Coeur*/
+i.fas.fa-heart.icone_heart:hover {
+  padding: 5px 0px 0px 0px;
+  font-size: 1.2em;
+  background: linear-gradient(90deg, #9356dc 0%, #ff79de 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  right: 0px;
+  top: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

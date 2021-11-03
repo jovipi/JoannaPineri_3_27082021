@@ -34,36 +34,11 @@ label :active {
     opacity: 1;
   }
   50% {
-    opacity: 0.33;
+    opacity: 0.5;
   }
   100% {
     transform: rotate(360deg);
     opacity: 0;
-    display: none;
-  }
-}
-@keyframes menu_valide {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes menu_valide {
-  0% {
-    -webkit-transform: translateX(1000px);
-    -webkit-transform: translateX(1000px);
-    -webkit-opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
   }
 }
 
@@ -93,14 +68,39 @@ label :active {
   animation: apparition_carte_menu 1.6s ease-in-out;
 }
 
-.icone_heart_accueil :active {
-  background-color: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#9356dc),
-    to(#ff79da)
+.cadre_proposition:hover .button_checked {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transform: translateX(65px right);
+}
+.cadre_proposition:hover i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.button_checked {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.cadre_proposition:hover .menuItem__icon {
+  display: contents;
+}
+
+/*Coeur*/
+
+i.fas.fa-heart.icone_heart:hover {
+  padding: 5px 0px 0px 0px;
+  font-size: 1.2em;
+  background: linear-gradient(
+    90deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 222, 1) 100%
   );
-  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
-  background: linear-gradient(to top, #9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  right: 0px;
+  top: 3px;
 }

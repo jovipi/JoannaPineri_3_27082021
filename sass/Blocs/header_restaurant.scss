@@ -18,8 +18,8 @@
   background-color: white;
 }
 #logo_page_menu img {
-  max-width: 65%;
-  max-height: 50%;
+  width: 85%;
+  height: 100%;
   object-fit: contain;
 }
 #logo_page_menu_2 img {
@@ -72,17 +72,31 @@
   flex-wrap: wrap;
   padding: 20px 0px 30px 15px;
 }
-.icone_heart :active {
-  background-color: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#9356dc),
-    to(#ff79da)
-  );
-  background: -o-linear-gradient(bottom, #9356dc, #ff79da);
-  background: linear-gradient(to top, #9356dc, #ff79da);
+
+i.far.fa-heart.icone_heart {
+  opacity: 0.5;
+  right: 25px;
+  bottom: 25px;
+  padding: 8px 0px 0px 20px;
+  font-size: 1.2em;
 }
+.icones {
+  position: relative;
+}
+
+i.fas.fa-heart.icone_heart {
+  padding: 5px 0px 0px 0px;
+  font-size: 1.2em;
+  background: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  right: 0px;
+  top: 3px;
+}
+
 .titre_page_menu {
   display: flex;
   text-align: center;
@@ -94,4 +108,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+/*--------------------------------------------------------------------------------------------------------
+                                    Media queries
+----------------------------------------------------------------------------------------------------------*/
+/* Pour mini tablettes*/
+@media screen and (min-width: 357px) and (max-width: 412px) {
+  .icone_fleche {
+    top: 30px;
+  }
+}
+@media screen and (min-width: 413px) and (max-width: 730px) {
 }
