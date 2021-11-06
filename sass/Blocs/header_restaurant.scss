@@ -1,7 +1,10 @@
 /*Logo*/
-/*Logo*/
 #logo_page_menu {
-  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   max-width: auto;
   padding-left: 80px;
   font-weight: bold;
@@ -31,8 +34,9 @@
   position: absolute;
   left: 30px;
   top: 25px;
-  padding: 0px 250px 0px 0px;
+  padding: 0px 0px 0px 0px;
   color: black;
+  display: flex;
 }
 
 .header_main {
@@ -66,10 +70,11 @@
   padding: 10px;
 }
 .bloc_titre {
-  @include flex_row_start_space-between;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
   padding: 20px 0px 30px 15px;
 }
 
@@ -77,16 +82,16 @@ i.far.fa-heart.icone_heart {
   opacity: 0.5;
   right: 25px;
   bottom: 25px;
-  padding: 8px 0px 0px 20px;
-  font-size: 1.2em;
+  padding: 4px 0px 0px 20px;
+  font-size: 1.5em;
 }
 .icones {
   position: relative;
 }
 
 i.fas.fa-heart.icone_heart {
-  padding: 5px 0px 0px 0px;
-  font-size: 1.2em;
+  padding: 1px 0px 0px 0px;
+  font-size: 1.5em;
   background: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -114,9 +119,31 @@ i.fas.fa-heart.icone_heart {
 ----------------------------------------------------------------------------------------------------------*/
 /* Pour mini tablettes*/
 @media screen and (min-width: 357px) and (max-width: 412px) {
-  .icone_fleche {
-    top: 30px;
-  }
 }
 @media screen and (min-width: 413px) and (max-width: 730px) {
+  #logo_page_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    padding-left: 80px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  #logo_page_menu img {
+    width: 80%;
+  }
+  .image_header {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 515px) and (max-width: 1440px) {
+  .image_header {
+    height: 280px;
+  }
+  .prix {
+    left: 200px;
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Roboto & display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
 * {
@@ -12,6 +13,15 @@ body {
   background-color: white;
 }
 
+@media screen and (min-width: 515px) and (max-width: 730px) {
+  .bloc_titre {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0px 30px 15px;
+  }
+}
 .formulaire_boutons {
   display: flex;
   width: 100%;
@@ -126,9 +136,14 @@ footer li i {
 }
 
 .bloc_entier_footer {
-  margin-block-start: 958px;
+  margin-block-start: 1090px;
 }
 
+@media screen and (min-width: 515px) and (max-width: 1440px) {
+  .bloc_entier_footer {
+    margin-block-start: 750px;
+  }
+}
 .header_main {
   display: flex;
   flex-direction: column;
@@ -294,7 +309,7 @@ footer li i {
   .button_filters {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: stretch;
     flex-wrap: wrap;
     align-content: stretch;
@@ -331,6 +346,13 @@ footer li i {
   width: 100%;
 }
 
+@media screen and (min-width: 515px) and (max-width: 1440px) {
+  .container_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -453,13 +475,13 @@ i.far.fa-heart.icone_heart_accueil {
   opacity: 0.5;
   right: 25px;
   bottom: 25px;
-  padding: 8px 20px 0px 20px;
-  font-size: 1.2em;
+  padding: 0px 20px 0px 20px;
+  font-size: 1.5em;
 }
 
 i.fas.fa-heart.icone_heart_accueil {
-  padding: 5px 0px 0px 0px;
-  font-size: 1.2em;
+  padding: 1px 0px 0px 0px;
+  font-size: 1.5em;
   background: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -559,6 +581,15 @@ body {
   background-color: white;
 }
 
+@media screen and (min-width: 515px) and (max-width: 730px) {
+  .bloc_titre {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0px 30px 15px;
+  }
+}
 .formulaire_boutons {
   display: flex;
   width: 100%;
@@ -774,16 +805,19 @@ body {
   .button_filters {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: stretch;
     flex-wrap: wrap;
     align-content: stretch;
   }
 }
 /*Logo*/
-/*Logo*/
 #logo_page_menu {
-  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   max-width: auto;
   padding-left: 80px;
   font-weight: bold;
@@ -817,8 +851,9 @@ body {
   position: absolute;
   left: 30px;
   top: 25px;
-  padding: 0px 250px 0px 0px;
+  padding: 0px 0px 0px 0px;
   color: black;
+  display: flex;
 }
 
 .header_main {
@@ -865,13 +900,9 @@ body {
 .bloc_titre {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
   padding: 20px 0px 30px 15px;
 }
 
@@ -879,8 +910,8 @@ i.far.fa-heart.icone_heart {
   opacity: 0.5;
   right: 25px;
   bottom: 25px;
-  padding: 8px 0px 0px 20px;
-  font-size: 1.2em;
+  padding: 4px 0px 0px 20px;
+  font-size: 1.5em;
 }
 
 .icones {
@@ -888,8 +919,8 @@ i.far.fa-heart.icone_heart {
 }
 
 i.fas.fa-heart.icone_heart {
-  padding: 5px 0px 0px 0px;
-  font-size: 1.2em;
+  padding: 1px 0px 0px 0px;
+  font-size: 1.5em;
   background: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -917,16 +948,41 @@ i.fas.fa-heart.icone_heart {
                                     Media queries
 ----------------------------------------------------------------------------------------------------------*/
 /* Pour mini tablettes*/
-@media screen and (min-width: 357px) and (max-width: 412px) {
-  .icone_fleche {
-    top: 30px;
+@media screen and (min-width: 413px) and (max-width: 730px) {
+  #logo_page_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    padding-left: 80px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
+  #logo_page_menu img {
+    width: 80%;
+  }
+
+  .image_header {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 515px) and (max-width: 1440px) {
+  .image_header {
+    height: 280px;
+  }
+
+  .prix {
+    left: 200px;
   }
 }
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
   width: 93%;
-  height: 60px;
+  height: 75px;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px grey;
@@ -980,12 +1036,12 @@ h2 {
 
 .titre_menu_h3 {
   color: #000;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
 .texte_menu_p {
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: #000;
 }
 
@@ -1017,22 +1073,25 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   left: 250px;
-  top: 34px;
+  top: 45px;
   font-size: 0.85em;
   color: #000;
 }
 
 .button_checked {
   background-color: #99e2d0;
-  font-size: 53px;
+  font-size: 54px;
   padding: 0px 10px 0px 20px;
   border-radius: 0px 20px 20px 0px;
   position: absolute;
   top: 0;
-  right: 50px;
   bottom: 0;
   width: 65px;
-  display: none;
+  right: -8px;
+  transform: translateX(-40px);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transform-origin: right 50%;
 }
 
 .menuItem__icon {
@@ -1073,10 +1132,48 @@ h2 {
   align-content: stretch;
 }
 
-/*Logo*/
+/*-------------------------------------------------------------------------------------------------------
+                                  Medias Queries
+---------------------------------------------------------------------------------------------------------*/
+/* Pour mini tablettes*/
+@media screen and (min-width: 343px) and (max-width: 730px) {
+  .prix {
+    left: 300px;
+  }
+
+  .cadre_proposition {
+    cursor: -webkit-zoom-out;
+    max-block-size: -webkit-fill-available;
+  }
+}
+@media screen and (min-width: 515px) and (max-width: 1440px) {
+  .entrees {
+    max-width: 300px;
+  }
+
+  .prix {
+    left: 210px;
+  }
+
+  #bloc_entree {
+    width: 50%;
+  }
+
+  .plats {
+    max-width: 300px;
+  }
+
+  #bloc_plats {
+    width: 50%;
+  }
+}
 /*Logo*/
 #logo_page_menu {
-  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   max-width: auto;
   padding-left: 80px;
   font-weight: bold;
@@ -1110,8 +1207,9 @@ h2 {
   position: absolute;
   left: 30px;
   top: 25px;
-  padding: 0px 250px 0px 0px;
+  padding: 0px 0px 0px 0px;
   color: black;
+  display: flex;
 }
 
 .header_main {
@@ -1158,13 +1256,9 @@ h2 {
 .bloc_titre {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
   padding: 20px 0px 30px 15px;
 }
 
@@ -1172,8 +1266,8 @@ i.far.fa-heart.icone_heart {
   opacity: 0.5;
   right: 25px;
   bottom: 25px;
-  padding: 8px 0px 0px 20px;
-  font-size: 1.2em;
+  padding: 4px 0px 0px 20px;
+  font-size: 1.5em;
 }
 
 .icones {
@@ -1181,8 +1275,8 @@ i.far.fa-heart.icone_heart {
 }
 
 i.fas.fa-heart.icone_heart {
-  padding: 5px 0px 0px 0px;
-  font-size: 1.2em;
+  padding: 1px 0px 0px 0px;
+  font-size: 1.5em;
   background: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -1210,16 +1304,41 @@ i.fas.fa-heart.icone_heart {
                                     Media queries
 ----------------------------------------------------------------------------------------------------------*/
 /* Pour mini tablettes*/
-@media screen and (min-width: 357px) and (max-width: 412px) {
-  .icone_fleche {
-    top: 30px;
+@media screen and (min-width: 413px) and (max-width: 730px) {
+  #logo_page_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    padding-left: 80px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
+  #logo_page_menu img {
+    width: 80%;
+  }
+
+  .image_header {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 515px) and (max-width: 1440px) {
+  .image_header {
+    height: 280px;
+  }
+
+  .prix {
+    left: 200px;
   }
 }
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
   width: 93%;
-  height: 60px;
+  height: 75px;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px grey;
@@ -1273,12 +1392,12 @@ h2 {
 
 .titre_menu_h3 {
   color: #000;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
 .texte_menu_p {
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: #000;
 }
 
@@ -1310,22 +1429,25 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   left: 250px;
-  top: 34px;
+  top: 45px;
   font-size: 0.85em;
   color: #000;
 }
 
 .button_checked {
   background-color: #99e2d0;
-  font-size: 53px;
+  font-size: 54px;
   padding: 0px 10px 0px 20px;
   border-radius: 0px 20px 20px 0px;
   position: absolute;
   top: 0;
-  right: 50px;
   bottom: 0;
   width: 65px;
-  display: none;
+  right: -8px;
+  transform: translateX(-40px);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transform-origin: right 50%;
 }
 
 .menuItem__icon {
@@ -1366,6 +1488,41 @@ h2 {
   align-content: stretch;
 }
 
+/*-------------------------------------------------------------------------------------------------------
+                                  Medias Queries
+---------------------------------------------------------------------------------------------------------*/
+/* Pour mini tablettes*/
+@media screen and (min-width: 343px) and (max-width: 730px) {
+  .prix {
+    left: 300px;
+  }
+
+  .cadre_proposition {
+    cursor: -webkit-zoom-out;
+    max-block-size: -webkit-fill-available;
+  }
+}
+@media screen and (min-width: 515px) and (max-width: 1440px) {
+  .entrees {
+    max-width: 300px;
+  }
+
+  .prix {
+    left: 210px;
+  }
+
+  #bloc_entree {
+    width: 50%;
+  }
+
+  .plats {
+    max-width: 300px;
+  }
+
+  #bloc_plats {
+    width: 50%;
+  }
+}
 label :hover {
   background-color: #f2eafb;
 }
@@ -1425,22 +1582,27 @@ label :active {
   animation: apparition_carte_menu 0.8s ease-in-out;
 }
 
-.cadre_proposition > :nth-of-type(4) {
-  animation: apparition_carte_menu 1.2s ease-in-out;
+.cadre_proposition > :nth-of-type(4) :hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 .cadre_proposition > :nth-of-type(5) {
   animation: apparition_carte_menu 1.6s ease-in-out;
 }
 
-.cadre_proposition:hover .button_checked {
+a.cadre_proposition.button_checked:hover {
   margin-right: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   transform: translateX(65px right);
 }
 
-.cadre_proposition:hover i {
+.button_valide:hover {
+  animation: menu_valide 0.5s both;
+}
+
+a.cadre_proposition:hover i {
   transform: rotate(360deg);
   transition-duration: 0.5s;
 }
@@ -1450,14 +1612,71 @@ label :active {
   transition-timing-function: ease;
 }
 
-.cadre_proposition:hover .menuItem__icon {
+a.cadre_proposition:hover .menuItem__icon {
   display: contents;
+}
+
+/*Menu validé*/
+@-webkit-keyframes menu_valide {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes menu_valide {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-200px);
+  }
+}
+.menu_valide:hover {
+  -webkit-animation: menu_valide 0.5s both;
+  animation: menu_valide 0.5s both;
+}
+
+.entrees.cadre_proposition.button_checked:checked {
+  -webkit-animation: menu_valide 0.5s;
+  animation: menu_valide 0.5s;
+}
+
+.button_checked:hover {
+  animation: menu_valide 0.5s;
+  -webkit-animation: menu_valide 0.5s;
+  animation: menu_valide 0.5s;
+}
+
+.prix {
+  animation: menu_valide 0.5s;
+  -webkit-animation: menu_valide 0.5s;
+  animation: menu_valide 0.5s;
+}
+
+.cadre_prix {
+  animation: menu_valide 0.5s;
+  -webkit-animation: menu_valide 0.5s;
+  animation: menu_valide 0.5s;
+}
+
+/* Texte menu*/
+.texte_menu_p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 /*Coeur*/
 i.fas.fa-heart.icone_heart:hover {
-  padding: 5px 0px 0px 0px;
-  font-size: 1.2em;
+  padding: 1px 0px 0px 0px;
+  font-size: 1.5em;
   background: linear-gradient(90deg, #9356dc 0%, #ff79de 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -1468,15 +1687,15 @@ i.fas.fa-heart.icone_heart:hover {
   top: 3px;
 }
 
-i.fas.fa-heart.icone_heart_accueil:hover {
-  padding: 5px 0px 0px 0px;
-  font-size: 1.2em;
+i.fas.fa-heart.icone_heart_accueil:active {
+  padding: 0px 0px 0px 0px;
+  font-size: 1.5em;
   background: linear-gradient(90deg, #9356dc 0%, #ff79de 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   position: absolute;
   right: 20px;
-  top: 179px;
+  top: 175px;
 }
 
 /*# sourceMappingURL=style.css.map */

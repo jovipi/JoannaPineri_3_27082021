@@ -60,21 +60,26 @@ label :active {
   animation: apparition_carte_menu 0.8s ease-in-out;
 }
 
-.cadre_proposition > :nth-of-type(4) {
-  animation: apparition_carte_menu 1.2s ease-in-out;
+.cadre_proposition > :nth-of-type(4) :hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 .cadre_proposition > :nth-of-type(5) {
   animation: apparition_carte_menu 1.6s ease-in-out;
 }
 
-.cadre_proposition:hover .button_checked {
+a.cadre_proposition.button_checked:hover {
   margin-right: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   transform: translateX(65px right);
 }
-.cadre_proposition:hover i {
+
+.button_valide:hover {
+  animation: menu_valide 0.5s both;
+}
+a.cadre_proposition:hover i {
   transform: rotate(360deg);
   transition-duration: 0.5s;
 }
@@ -82,15 +87,69 @@ label :active {
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
-.cadre_proposition:hover .menuItem__icon {
+a.cadre_proposition:hover .menuItem__icon {
   display: contents;
+}
+
+/*Menu validé*/
+@-webkit-keyframes menu_valide {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes menu_valide {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-200px);
+  }
+}
+.menu_valide:hover {
+  -webkit-animation: menu_valide 0.5s both;
+  animation: menu_valide 0.5s both;
+}
+.entrees.cadre_proposition.button_checked:checked {
+  -webkit-animation: menu_valide 0.5s;
+  animation: menu_valide 0.5s;
+}
+
+.button_checked:hover {
+  animation: menu_valide 0.5s;
+  -webkit-animation: menu_valide 0.5s;
+  animation: menu_valide 0.5s;
+}
+.prix {
+  animation: menu_valide 0.5s;
+  -webkit-animation: menu_valide 0.5s;
+  animation: menu_valide 0.5s;
+}
+.cadre_prix {
+  animation: menu_valide 0.5s;
+  -webkit-animation: menu_valide 0.5s;
+  animation: menu_valide 0.5s;
+}
+
+/* Texte menu*/
+.texte_menu_p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 /*Coeur*/
 
 i.fas.fa-heart.icone_heart:hover {
-  padding: 5px 0px 0px 0px;
-  font-size: 1.2em;
+  padding: 1px 0px 0px 0px;
+  font-size: 1.5em;
   background: linear-gradient(
     90deg,
     rgba(147, 86, 220, 1) 0%,
@@ -104,9 +163,9 @@ i.fas.fa-heart.icone_heart:hover {
   right: 0px;
   top: 3px;
 }
-i.fas.fa-heart.icone_heart_accueil:hover {
-  padding: 5px 0px 0px 0px;
-  font-size: 1.2em;
+i.fas.fa-heart.icone_heart_accueil:active {
+  padding: 0px 0px 0px 0px;
+  font-size: 1.5em;
   background: linear-gradient(
     90deg,
     rgba(147, 86, 220, 1) 0%,
@@ -116,5 +175,5 @@ i.fas.fa-heart.icone_heart_accueil:hover {
   -webkit-background-clip: text;
   position: absolute;
   right: 20px;
-  top: 179px;
+  top: 175px;
 }
