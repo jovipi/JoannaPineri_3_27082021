@@ -132,6 +132,17 @@ i.fas.fa-heart.icone_heart {
     font-weight: bold;
     padding-top: 20px;
   }
+  #logo_page_menu_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    padding-left: 80px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
   #logo_page_menu img {
     width: 80%;
   }
@@ -139,7 +150,7 @@ i.fas.fa-heart.icone_heart {
     height: 280px;
   }
 }
-@media screen and (min-width: 515px) and (max-width: 1440px) {
+@media screen and (min-width: 515px) and (max-width: 1950px) {
   .image_header {
     height: 280px;
   }

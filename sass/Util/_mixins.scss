@@ -142,3 +142,34 @@
     padding: 20px 0px 30px 15px;
   }
 }
+@media screen and (min-width: 1095px) and (max-width: 1250px) {
+  .search_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 30px 30px 30px;
+    border: 2px solid #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    position: relative;
+    z-index: 0;
+    height: 50px;
+    margin: 15px auto;
+    background-color: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#9356dc),
+      to(#ff79da)
+    );
+    background: -o-linear-gradient(bottom, #9356dc, #ff79da);
+    background: linear-gradient(to top, #9356dc, #ff79da);
+    color: #fff;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
+}

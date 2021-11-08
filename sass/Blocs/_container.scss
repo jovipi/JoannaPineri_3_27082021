@@ -27,10 +27,19 @@
   overflow: hidden;
   width: 100%;
 }
-@media screen and (min-width: 515px) and (max-width: 1440px) {
+@media screen and (min-width: 515px) and (max-width: 1095px) {
   .container_menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1095px) and (max-width: 1950px) {
+  .container_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }

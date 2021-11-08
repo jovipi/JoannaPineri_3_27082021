@@ -53,10 +53,15 @@ footer li i {
   margin-block-start: 1100px;
 }
 .bloc_entier_footer {
-  margin-block-start: 1090px;
+  margin-block-start: 1150px;
 }
-@media screen and (min-width: 515px) and (max-width: 1440px) {
+@media screen and (min-width: 515px) and (max-width: 1095px) {
   .bloc_entier_footer {
-    margin-block-start: 750px;
+    margin-block-start: 775px;
+  }
+}
+@media screen and (min-width: 1095px) and (max-width: 1950px) {
+  .bloc_entier_footer {
+    margin-block-start: 70px;
   }
 }

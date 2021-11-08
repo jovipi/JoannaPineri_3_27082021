@@ -126,14 +126,48 @@ a.cadre_proposition:hover .menuItem__icon {
   -webkit-animation: menu_valide 0.5s;
   animation: menu_valide 0.5s;
 }
-.prix {
+
+.cadre_prix {
   animation: menu_valide 0.5s;
   -webkit-animation: menu_valide 0.5s;
   animation: menu_valide 0.5s;
 }
-.cadre_prix {
+.desserts:hover .button_checked {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.desserts:hover i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.button_checked > i {
+  color: #99e2d0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: white;
+  transition-duration: 0.5s;
+}
+.cadre_proposition > * {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+input:checked ~ .desserts .icone {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+input:checked ~ .container i {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transform: rotate(360deg);
+}
+.cadre_proposition:hover .button_checked {
   animation: menu_valide 0.5s;
-  -webkit-animation: menu_valide 0.5s;
+}
+.cadre_proposition:hover.button_checked {
   animation: menu_valide 0.5s;
 }
 
