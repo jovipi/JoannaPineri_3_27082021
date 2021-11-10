@@ -66,9 +66,27 @@ footer li i {
   .bloc_entier_footer {
     margin-block-start: 775px;
   }
+  .bloc_entier_footer4 {
+    margin-block-start: 800px;
+  }
+  .bloc_entier_footer3 {
+    margin-block-start: 800px;
+  }
+  .bloc_entier_footer2 {
+    margin-block-start: 830px;
+  }
 }
 @media screen and (min-width: 1095px) and (max-width: 1950px) {
   .bloc_entier_footer {
     margin-block-start: 70px;
+  }
+  .bloc_entier_footer4 {
+    margin-block-start: 465px;
+  }
+  .bloc_entier_footer3 {
+    margin-block-start: 460px;
+  }
+  .bloc_entier_footer2 {
+    margin-block-start: 490px;
   }
 }

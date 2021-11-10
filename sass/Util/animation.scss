@@ -95,7 +95,7 @@ a.cadre_proposition:hover .menuItem__icon {
   }
   100% {
     -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
+    transform: translateX(-150px);
   }
 }
 @keyframes menu_valide {
@@ -105,9 +105,60 @@ a.cadre_proposition:hover .menuItem__icon {
   }
   100% {
     -webkit-transform: translateX(-100px);
-    transform: translateX(-200px);
+    transform: translateX(-150px);
   }
 }
+/* Prix décalé*/
+@-webkit-keyframes prix_decale {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+    transform: translateX(-70px);
+  }
+}
+@keyframes prix_decale {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+    transform: translateX(-70px);
+  }
+}
+/* Texte_rogne*/
+@-webkit-keyframes texte_rogne {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 100%;
+  }
+  100% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    width: 50%;
+  }
+}
+@keyframes texte_rogne {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+}
+.cadre_proposition:hover .titre_menu_h3 {
+  width: 50%;
+}
+.cadre_proposition:hover .texte_menu_p {
+  width: 50%;
+}
+
 .menu_valide:hover {
   -webkit-animation: menu_valide 0.5s both;
   animation: menu_valide 0.5s both;
@@ -161,13 +212,16 @@ input:checked ~ .container i {
   transform: rotate(360deg);
 }
 .cadre_proposition:hover .button_checked {
-  animation: menu_valide 0.5s;
-}
-.cadre_proposition:hover.button_checked {
-  animation: menu_valide 0.5s;
+  animation: menu_valide 1s;
 }
 .cadre_proposition:hover .prix {
-  animation: menu_valide 0.5s;
+  animation: prix_decale 1s;
+}
+.cadre_proposition:hover.button_checked {
+  animation: menu_valide 1s;
+}
+.cadre_proposition:hover.prix {
+  animation: prix_decale 1s;
 }
 
 /* Texte menu*/
@@ -207,6 +261,6 @@ i.fas.fa-heart.icone_heart_accueil:active {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   position: absolute;
-  right: 20px;
+  right: 45px;
   top: 175px;
 }

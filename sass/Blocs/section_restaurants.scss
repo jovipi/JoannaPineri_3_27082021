@@ -13,12 +13,20 @@
   box-shadow: 2px 2px 7px #d3d3d3;
   width: 100%;
 }
+.bloc_pour_coeur {
+  display: block;
+  border-radius: 35px;
+  box-shadow: 0px 0px 0px grey;
+  width: 100%;
+  position: relative;
+}
 .etablissement {
   display: block;
   border-radius: 35px;
   box-shadow: 0px 0px 0px grey;
   width: 100%;
 }
+
 .cadre_etablissement {
   display: block;
   width: 100%;
@@ -71,6 +79,7 @@ i.far.fa-heart.icone_heart_accueil {
   bottom: 25px;
   padding: 0px 20px 0px 20px;
   font-size: 1.5em;
+  position: absolute;
 }
 
 i.fas.fa-heart.icone_heart_accueil {
@@ -80,8 +89,8 @@ i.fas.fa-heart.icone_heart_accueil {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   position: absolute;
-  right: 20px;
-  top: 179px;
+  right: 45px;
+  top: 175px;
 }
 /*----------------------------------------------------------------------------------------------------
                                       Medias Queries
