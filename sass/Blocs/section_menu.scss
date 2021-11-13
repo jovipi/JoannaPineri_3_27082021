@@ -1,7 +1,7 @@
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
-  width: 93%;
+  width: 95%;
   height: 75px;
   padding: 10px;
   border-radius: 15px;
@@ -10,7 +10,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-between;
+  align-content: flex-start;
   align-items: flex-start;
   position: relative;
   animation: apparition_carte_menu 3s;
@@ -62,7 +62,7 @@ h2 {
   font-weight: bold;
 }
 .texte_menu_p {
-  font-size: 0.8em;
+  font-size: 0.73em;
   color: $black;
 }
 .search_button {
@@ -166,7 +166,7 @@ h2 {
   align-content: stretch;
 }
 .prix {
-  margin-left: 0.5rem;
+  margin-left: 0.7rem;
 }
 /*-------------------------------------------------------------------------------------------------------
                                   Medias Queries

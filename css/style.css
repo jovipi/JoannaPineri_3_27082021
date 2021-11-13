@@ -66,7 +66,7 @@ body {
   text-align: center;
   color: black;
   cursor: pointer;
-  padding: 0px 0px 0px 60px;
+  padding: 10px 0px 0px 60px;
   font-weight: 900;
   font-size: 16px;
 }
@@ -81,7 +81,7 @@ body {
   color: black;
 }
 
-.button {
+.button_explore {
   padding: 20px 20px 50px 20px;
   border: 2px solid #f2f2f2;
   display: flex;
@@ -91,7 +91,7 @@ body {
   text-align: center;
   z-index: 0;
   height: 15px;
-  margin: 20px 40px 10px 60px;
+  margin: 20px 40px 10px 70px;
   background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -232,6 +232,7 @@ footer li i {
   animation: loader_background 0.1s;
   animation-delay: 2.9s;
   animation-fill-mode: both;
+  background-color: rgba(252, 253, 245, 0.8);
 }
 
 .loader_rotate {
@@ -253,13 +254,9 @@ footer li i {
   text-align: start;
   margin-block-start: 10%;
   margin-block-end: 5%;
-  font-weight: bold;
   font-size: 1.3em;
-  font-weight: bold;
   margin: 15px 20px 5px 20px;
-  display: block;
   text-align: center;
-  font-weight: 4000;
   font-size: 1.4em;
   font-weight: bold;
   margin: 36px 50px 10px 50px;
@@ -277,7 +274,7 @@ footer li i {
   text-align: center;
 }
 
-.button {
+.button_explore {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,9 +288,10 @@ footer li i {
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
-  font-size: 0.9em;
+  font-size: 0.85em;
   padding: 23px;
   flex-direction: column;
+  width: 200px;
 }
 
 .icone_filtres {
@@ -334,7 +332,7 @@ footer li i {
   position: relative;
   top: 46px;
   color: #fff;
-  left: 1px;
+  left: -7px;
   font-size: 12px;
 }
 
@@ -380,6 +378,12 @@ footer li i {
 .container {
   background-color: #f2f2f2;
   padding: 0px 0px 40px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .container_desktop {
@@ -469,9 +473,10 @@ footer li i {
 }
 
 .titre_bloc h2 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
-  padding: 30px 0px 0px 30px;
+  padding: 30px 0px 20px 20px;
+  width: 100%;
 }
 
 /*------cadre restaurants-----------*/
@@ -521,7 +526,6 @@ footer li i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: space-between;
   margin-bottom: 15px;
   font-size: 20px;
   height: 100%;
@@ -592,7 +596,6 @@ i.fas.fa-heart.icone_heart_accueil {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: space-between;
     padding: 0px;
     margin: 20px 10px 0px 30px;
   }
@@ -609,10 +612,11 @@ i.fas.fa-heart.icone_heart_accueil {
 
   .titre_bloc {
     padding: 30px 0px 0px 20px;
+    width: 100%;
   }
 
   .titre_bloc h2 {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 /*Pour tous types de tablettes*/
@@ -621,7 +625,6 @@ i.fas.fa-heart.icone_heart_accueil {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: space-between;
     padding: 0px;
     margin: 20px 10px 0px 30px;
   }
@@ -638,6 +641,7 @@ i.fas.fa-heart.icone_heart_accueil {
 
   .titre_bloc {
     padding: 30px 0px 0px 20px;
+    width: 100%;
   }
 
   .titre_bloc h2 {
@@ -651,7 +655,7 @@ i.fas.fa-heart.icone_heart_accueil {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .bloc_photo {
@@ -661,6 +665,11 @@ i.fas.fa-heart.icone_heart_accueil {
   .titre_bloc h2 {
     padding: 40px 10px 0px 30px;
     margin: 30px;
+  }
+
+  .titre_bloc {
+    padding: 30px 0px 0px 20px;
+    width: 100%;
   }
 }
 * {
@@ -728,7 +737,7 @@ body {
   text-align: center;
   color: black;
   cursor: pointer;
-  padding: 0px 0px 0px 60px;
+  padding: 10px 0px 0px 60px;
   font-weight: 900;
   font-size: 16px;
 }
@@ -743,7 +752,7 @@ body {
   color: black;
 }
 
-.button {
+.button_explore {
   padding: 20px 20px 50px 20px;
   border: 2px solid #f2f2f2;
   display: flex;
@@ -753,7 +762,7 @@ body {
   text-align: center;
   z-index: 0;
   height: 15px;
-  margin: 20px 40px 10px 60px;
+  margin: 20px 40px 10px 70px;
   background-color: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -785,6 +794,7 @@ body {
   animation: loader_background 0.1s;
   animation-delay: 2.9s;
   animation-fill-mode: both;
+  background-color: rgba(252, 253, 245, 0.8);
 }
 
 .loader_rotate {
@@ -806,13 +816,9 @@ body {
   text-align: start;
   margin-block-start: 10%;
   margin-block-end: 5%;
-  font-weight: bold;
   font-size: 1.3em;
-  font-weight: bold;
   margin: 15px 20px 5px 20px;
-  display: block;
   text-align: center;
-  font-weight: 4000;
   font-size: 1.4em;
   font-weight: bold;
   margin: 36px 50px 10px 50px;
@@ -830,7 +836,7 @@ body {
   text-align: center;
 }
 
-.button {
+.button_explore {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -844,9 +850,10 @@ body {
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
-  font-size: 0.9em;
+  font-size: 0.85em;
   padding: 23px;
   flex-direction: column;
+  width: 200px;
 }
 
 .icone_filtres {
@@ -887,7 +894,7 @@ body {
   position: relative;
   top: 46px;
   color: #fff;
-  left: 1px;
+  left: -7px;
   font-size: 12px;
 }
 
@@ -937,7 +944,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: auto;
   padding-left: 80px;
   font-weight: bold;
   padding-top: 20px;
@@ -949,7 +955,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: auto;
   padding-left: 80px;
   font-weight: bold;
   padding-top: 20px;
@@ -1075,7 +1080,6 @@ i.fas.fa-heart.icone_heart {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: auto;
     padding-left: 80px;
     font-weight: bold;
     padding-top: 20px;
@@ -1087,7 +1091,6 @@ i.fas.fa-heart.icone_heart {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: auto;
     padding-left: 80px;
     font-weight: bold;
     padding-top: 20px;
@@ -1113,7 +1116,7 @@ i.fas.fa-heart.icone_heart {
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
-  width: 93%;
+  width: 95%;
   height: 75px;
   padding: 10px;
   border-radius: 15px;
@@ -1122,7 +1125,7 @@ i.fas.fa-heart.icone_heart {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-between;
+  align-content: flex-start;
   align-items: flex-start;
   position: relative;
   animation: apparition_carte_menu 3s;
@@ -1179,7 +1182,7 @@ h2 {
 }
 
 .texte_menu_p {
-  font-size: 0.8em;
+  font-size: 0.73em;
   color: #000;
 }
 
@@ -1308,7 +1311,7 @@ h2 {
 }
 
 .prix {
-  margin-left: 0.5rem;
+  margin-left: 0.7rem;
 }
 
 /*-------------------------------------------------------------------------------------------------------
@@ -1507,7 +1510,6 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: auto;
   padding-left: 80px;
   font-weight: bold;
   padding-top: 20px;
@@ -1519,7 +1521,6 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: auto;
   padding-left: 80px;
   font-weight: bold;
   padding-top: 20px;
@@ -1645,7 +1646,6 @@ i.fas.fa-heart.icone_heart {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: auto;
     padding-left: 80px;
     font-weight: bold;
     padding-top: 20px;
@@ -1657,7 +1657,6 @@ i.fas.fa-heart.icone_heart {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: auto;
     padding-left: 80px;
     font-weight: bold;
     padding-top: 20px;
@@ -1683,7 +1682,7 @@ i.fas.fa-heart.icone_heart {
 /* -----Cadre photo restaurants--------*/
 .cadre_proposition {
   display: flex;
-  width: 93%;
+  width: 95%;
   height: 75px;
   padding: 10px;
   border-radius: 15px;
@@ -1692,7 +1691,7 @@ i.fas.fa-heart.icone_heart {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-between;
+  align-content: flex-start;
   align-items: flex-start;
   position: relative;
   animation: apparition_carte_menu 3s;
@@ -1749,7 +1748,7 @@ h2 {
 }
 
 .texte_menu_p {
-  font-size: 0.8em;
+  font-size: 0.73em;
   color: #000;
 }
 
@@ -1878,7 +1877,7 @@ h2 {
 }
 
 .prix {
-  margin-left: 0.5rem;
+  margin-left: 0.7rem;
 }
 
 /*-------------------------------------------------------------------------------------------------------
@@ -2078,6 +2077,16 @@ label :active {
   background-color: #f2eafb;
 }
 
+.button:hover {
+  opacity: 0.8;
+  box-shadow: 1px 2px 10px grey;
+}
+
+.search_button:hover {
+  opacity: 0.8;
+  box-shadow: 1px 2px 10px grey;
+}
+
 @keyframes loader_background {
   100% {
     opacity: 0;
@@ -2117,7 +2126,7 @@ label :active {
     opacity: 0;
   }
   50% {
-    transform: translateY(-10);
+    transform: translateY(-10px);
     opacity: 0.5;
   }
   100% {
@@ -2137,7 +2146,7 @@ a.cadre_proposition.button_checked:hover {
   margin-right: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-  transform: translateX(65px right);
+  transform: translateX(65px);
 }
 
 .button_valide:hover {
@@ -2329,7 +2338,7 @@ i.fas.fa-heart.icone_heart:hover {
   top: 3px;
 }
 
-i.fas.fa-heart.icone_heart_accueil:active {
+i.fas.fa-heart.icone_heart_accueil:hover {
   padding: 0px 0px 0px 0px;
   font-size: 1.5em;
   background: linear-gradient(90deg, #9356dc 0%, #ff79de 100%);

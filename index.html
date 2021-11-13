@@ -24,16 +24,17 @@
                     <div class="header_main">
                         <!--Logo-->
                             <a href="">
-                                <img class="logo_header"src="images/logo/ohmyfood.png" alt="logo site">
+                                <img class="logo_header" src="images/logo/ohmyfood.png" alt="logo site">
                             </a>
                     </div>
             <div class="container">
                 <form class="formulaire_boutons" method="POST" action="traitement.php">
                     <!--Zone de Recherche-->
-                    <button type="button" class="position_button">
+                    <div class="position_button">
                     <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
                     <input type="search" name="search_city" id="search" placeholder="Paris, Belleville" autofocus required />
-                    </button>
+                    </div>
+                </form>
                
             <!--Le corps de Header-->
                     <div class="title_main">
@@ -46,10 +47,10 @@
                     <div class="filtres_bloc">
                     <!--Bouton Economique-->
                         <label>
-                            <span class="button">Explorer nos restaurants</span>
+                            <span class="button_explore">Explorer nos restaurants</span>
                         </label>
-                        <input type="button" hidden name="button_filtre" id="explorer" />         
-                </form>
+                        <input type="search" hidden name="button_filtre" id="explorer" />         
+                    </div>
             </div> 
         </header>
         <section id="section_fonctionnement">
@@ -74,19 +75,18 @@
              <!--Bouton Dégustez au restaurant-->
                         <label>
                             <span class="circle-icon">3</span>
-                            <span class="checkbox_filtres"><i class="icone_filtres fas fa-store"></i><p class="nom_filtres">Dégustez au restaurant</p></span>
+                            <span class="checkbox_filtres"><i class="icone_filtres fas fa-store"></i><span class="nom_filtres">Dégustez au restaurant</span></span>
                         </label>
                             <input type="checkbox" hidden name="button_filtre" id="dégust_resto" />
                     </form>
             </div>
         </section>
         <div class="container_desktop">
-            <div class="titre_bloc">
-                <!--Titre de la Section-->
-                    <h2>Restaurants</h2>
+            <section id="section_restaurants">
+                <div class="titre_bloc">
+                    <!--Titre de la Section-->
+                        <h2>Restaurants</h2>
                 </div>
-
-        <section id="section_restaurants">
                 <!--Bloc Section-->
                 <div class="bloc_photo">
                     <div class="bloc_pour_coeur">
@@ -138,7 +138,7 @@
                         </a>
                     </div>
                 </div>  
-        </section>
+            </section>
         </div> 
         <!--Footer-->
         <footer>

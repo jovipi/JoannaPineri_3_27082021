@@ -22,7 +22,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: space-between;
 }
 @mixin flex_start_align_center {
   display: flex;
@@ -117,7 +116,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: space-between;
 }
 @mixin desktop_fontionnement {
   display: flex;
@@ -131,7 +129,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 @media screen and (min-width: 515px) and (max-width: 730px) {
   .bloc_titre {

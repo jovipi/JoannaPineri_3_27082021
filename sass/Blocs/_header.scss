@@ -20,6 +20,7 @@
   animation: loader_background 0.1s;
   animation-delay: 2.9s;
   animation-fill-mode: both;
+  background-color: rgba(252, 253, 245, 0.8);
 }
 
 .loader_rotate {
@@ -41,13 +42,9 @@
   text-align: start;
   margin-block-start: 10%;
   margin-block-end: 5%;
-  font-weight: bold;
   font-size: 1.3em;
-  font-weight: bold;
   margin: 15px 20px 5px 20px;
-  display: block;
   text-align: center;
-  font-weight: 4000;
   font-size: 1.4em;
   font-weight: bold;
   margin: 36px 50px 10px 50px;
@@ -65,7 +62,7 @@
   text-align: center;
 }
 
-.button {
+.button_explore {
   @include flex_center;
   border: 2px solid #f2f2f2;
   display: flex;
@@ -82,9 +79,10 @@
   background: -o-linear-gradient(bottom, #9356dc, #ff79da);
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
-  font-size: 0.9em;
+  font-size: 0.85em;
   padding: 23px;
   flex-direction: column;
+  width: 200px;
 }
 
 .icone_filtres {
@@ -112,7 +110,7 @@
   position: relative;
   top: 46px;
   color: #fff;
-  left: 1px;
+  left: -7px;
   font-size: 12px;
 }
 .nom_filtres {
