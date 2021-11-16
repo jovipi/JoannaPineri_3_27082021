@@ -2069,24 +2069,7 @@ h2 {
     align-content: center;
   }
 }
-label :hover {
-  background-color: #f2eafb;
-}
-
-label :active {
-  background-color: #f2eafb;
-}
-
-.button_explore:hover {
-  opacity: 0.8;
-  box-shadow: 1px 2px 10px grey;
-}
-
-.search_button:hover {
-  opacity: 0.8;
-  box-shadow: 1px 2px 10px grey;
-}
-
+/*Loader Spinner background*/
 @keyframes loader_background {
   100% {
     opacity: 0;
@@ -2099,9 +2082,14 @@ label :active {
     z-index: -1;
   }
 }
+/*Rotation_loader*/
 @-webkit-keyframes rotate {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     transform: rotate(360deg);
@@ -2120,6 +2108,27 @@ label :active {
     opacity: 0;
   }
 }
+/* Bouton explorer et Search*/
+.button_explore:hover {
+  opacity: 0.8;
+  box-shadow: 1px 2px 10px grey;
+}
+
+.search_button:hover {
+  opacity: 0.8;
+  box-shadow: 1px 2px 10px grey;
+}
+
+/*Filtres Accueil*/
+label :hover {
+  background-color: #f2eafb;
+}
+
+label :active {
+  background-color: #f2eafb;
+}
+
+/*Apparition Carte Menu*/
 @keyframes apparition_carte_menu {
   0% {
     transform: translateY(-70px);
@@ -2142,6 +2151,7 @@ label :active {
   animation: apparition_carte_menu 1.6s ease-in-out;
 }
 
+/*Menu Validé*/
 a.cadre_proposition.button_checked:hover {
   margin-right: 0;
   transition-duration: 0.5s;
@@ -2153,20 +2163,38 @@ a.cadre_proposition.button_checked:hover {
   animation: menu_valide 0.5s both;
 }
 
-a.cadre_proposition:hover i {
-  transform: rotate(360deg);
-  transition-duration: 0.5s;
-}
-
 .button_checked {
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
 
-a.cadre_proposition:hover .menuItem__icon {
+/*Rotation icone*/
+a.cadre_proposition .button_checked:hover i.menuItem__icon {
   display: contents;
 }
 
+.button_checked:hover > i {
+  transform: rotate(360deg);
+  animation: rotate_icone 0.5s;
+  transition: all 400ms ease-in-out 0ms;
+}
+
+@-webkit-keyframes rotate_icone {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate_icone {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*Menu validé*/
 @-webkit-keyframes menu_valide {
   0% {
@@ -2240,6 +2268,7 @@ a.cadre_proposition:hover .menuItem__icon {
   width: 50%;
 }
 
+/*Menu_valide*/
 .menu_valide:hover {
   -webkit-animation: menu_valide 0.5s both;
   animation: menu_valide 0.5s both;
@@ -2297,7 +2326,7 @@ input:checked ~ .container i {
   margin-right: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-  transform: rotate(360deg);
+  transform: rotate_icone(360deg);
 }
 
 .cadre_proposition:hover .button_checked {
