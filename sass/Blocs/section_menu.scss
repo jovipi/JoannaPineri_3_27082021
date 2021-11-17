@@ -166,7 +166,7 @@ h2 {
   align-content: stretch;
 }
 .prix {
-  margin-left: 0.7rem;
+  left: 230px;
 }
 /*-------------------------------------------------------------------------------------------------------
                                   Medias Queries
@@ -175,7 +175,7 @@ h2 {
 /* Pour mini tablettes*/
 @media screen and (min-width: 343px) and (max-width: 730px) {
   .prix {
-    left: 300px;
+    left: 260px;
   }
   .cadre_proposition {
     cursor: -webkit-zoom-out;
@@ -187,7 +187,7 @@ h2 {
     max-width: 300px;
   }
   .prix {
-    left: 210px;
+    left: 220px;
   }
   #bloc_entree {
     width: 50%;
@@ -205,9 +205,9 @@ h2 {
     flex-wrap: wrap;
     padding-bottom: 10px;
     border-radius: 2px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: stretch;
   }
   #bloc_desserts {
@@ -223,7 +223,7 @@ h2 {
     width: 100%;
     padding-bottom: 10px;
     border-radius: 2px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
     justify-content: center;
     align-content: stretch;
@@ -300,8 +300,14 @@ h2 {
     justify-content: center;
     align-content: stretch;
   }
+  .bloc_menu_plats {
+    width: 100%;
+  }
   #bloc_dessert {
     width: 30%;
+  }
+  .bloc_menu_desserts {
+    width: 100%;
   }
   #bloc_dessert2 {
     width: 30%;
@@ -317,6 +323,9 @@ h2 {
   }
   .desserts {
     max-width: 300px;
+  }
+  .prix {
+    left: 240px;
   }
   .commande_button {
     width: 15%;

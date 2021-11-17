@@ -1311,7 +1311,7 @@ h2 {
 }
 
 .prix {
-  margin-left: 0.7rem;
+  left: 230px;
 }
 
 /*-------------------------------------------------------------------------------------------------------
@@ -1320,7 +1320,7 @@ h2 {
 /* Pour mini tablettes*/
 @media screen and (min-width: 343px) and (max-width: 730px) {
   .prix {
-    left: 300px;
+    left: 260px;
   }
 
   .cadre_proposition {
@@ -1334,7 +1334,7 @@ h2 {
   }
 
   .prix {
-    left: 210px;
+    left: 220px;
   }
 
   #bloc_entree {
@@ -1356,9 +1356,9 @@ h2 {
     flex-wrap: wrap;
     padding-bottom: 10px;
     border-radius: 2px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: stretch;
   }
 
@@ -1376,7 +1376,7 @@ h2 {
     width: 100%;
     padding-bottom: 10px;
     border-radius: 2px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
     justify-content: center;
     align-content: stretch;
@@ -1454,8 +1454,16 @@ h2 {
     align-content: stretch;
   }
 
+  .bloc_menu_plats {
+    width: 100%;
+  }
+
   #bloc_dessert {
     width: 30%;
+  }
+
+  .bloc_menu_desserts {
+    width: 100%;
   }
 
   #bloc_dessert2 {
@@ -1473,6 +1481,10 @@ h2 {
 
   .desserts {
     max-width: 300px;
+  }
+
+  .prix {
+    left: 240px;
   }
 
   .commande_button {
@@ -1877,7 +1889,7 @@ h2 {
 }
 
 .prix {
-  margin-left: 0.7rem;
+  left: 230px;
 }
 
 /*-------------------------------------------------------------------------------------------------------
@@ -1886,7 +1898,7 @@ h2 {
 /* Pour mini tablettes*/
 @media screen and (min-width: 343px) and (max-width: 730px) {
   .prix {
-    left: 300px;
+    left: 260px;
   }
 
   .cadre_proposition {
@@ -1900,7 +1912,7 @@ h2 {
   }
 
   .prix {
-    left: 210px;
+    left: 220px;
   }
 
   #bloc_entree {
@@ -1922,9 +1934,9 @@ h2 {
     flex-wrap: wrap;
     padding-bottom: 10px;
     border-radius: 2px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: stretch;
   }
 
@@ -1942,7 +1954,7 @@ h2 {
     width: 100%;
     padding-bottom: 10px;
     border-radius: 2px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
     justify-content: center;
     align-content: stretch;
@@ -2020,8 +2032,16 @@ h2 {
     align-content: stretch;
   }
 
+  .bloc_menu_plats {
+    width: 100%;
+  }
+
   #bloc_dessert {
     width: 30%;
+  }
+
+  .bloc_menu_desserts {
+    width: 100%;
   }
 
   #bloc_dessert2 {
@@ -2039,6 +2059,10 @@ h2 {
 
   .desserts {
     max-width: 300px;
+  }
+
+  .prix {
+    left: 240px;
   }
 
   .commande_button {
@@ -2111,12 +2135,10 @@ h2 {
 /* Bouton explorer et Search*/
 .button_explore:hover {
   opacity: 0.8;
-  box-shadow: 1px 2px 10px grey;
 }
 
 .search_button:hover {
   opacity: 0.8;
-  box-shadow: 1px 2px 10px grey;
 }
 
 /*Filtres Accueil*/
@@ -2203,7 +2225,7 @@ a.cadre_proposition .button_checked:hover i.menuItem__icon {
   }
   100% {
     -webkit-transform: translateX(-100px);
-    transform: translateX(-150px);
+    transform: translateX(-125x);
   }
 }
 @keyframes menu_valide {
@@ -2213,7 +2235,7 @@ a.cadre_proposition .button_checked:hover i.menuItem__icon {
   }
   100% {
     -webkit-transform: translateX(-100px);
-    transform: translateX(-150px);
+    transform: translateX(-125px);
   }
 }
 /* Prix décalé*/
